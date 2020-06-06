@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var i = 0;
+
+function addAFavorite() {
+    var liElement = document.createElement("li");
+    var textNode;
+
+    switch(i) {
+    case 0:
+        textNode = document.createTextNode("raindrops on roses");
+        break;
+    case 1:
+        textNode = document.createTextNode("whiskers on kittens");
+        break;
+    case 2:
+        textNode = document.createTextNode("bright copper kettles");
+        break;
+    case 3:
+        textNode = document.createTextNode("warm woolen mittens");
+        break;
+    case 4:
+        textNode = document.createTextNode("brown paper packages tied up with string");
+        break;
+    case 5:
+        textNode = document.createTextNode("cream colored ponies");
+        break;
+    case 6:
+        textNode = document.createTextNode("crisp apple strudels");
+        break;
+    case 7:
+        textNode = document.createTextNode("doorbells");
+        break;
+    case 8:
+        textNode = document.createTextNode("sleighbells");
+        break;
+    case 9:
+        textNode = document.createTextNode("schnitzel with noodles");
+        break;
+    case 10:
+        textNode = document.createTextNode("wild geese that fly with the moon on their wings");
+        break;
+    }
+    liElement.appendChild(textNode);
+    var ulElement = document.getElementById("favThingsList");
+    ulElement.appendChild(liElement);
+
+    i++;
+    if (i > 10) {
+        // Disable the button
+        let myButton = document.getElementById("myButton");
+        myButton.disabled = true;
+
+        // Change text on the button
+        // First get rid of existing text on the button
+        let existingTextNode = myButton.firstChild;
+        myButton.removeChild(existingTextNode);
+
+        // Now add new text to the button
+        let btnTextNode = document.createTextNode("That's all.");
+        myButton.appendChild(btnTextNode);
+    }
+}
+</script>
+</head>
+
+<body>
+<button type="button" id="myButton" onclick="addAFavorite();">Click to see some of my favorite things</button><br>
+
+<ul id="favThingsList">
+</ul>
+</body>
+</html>

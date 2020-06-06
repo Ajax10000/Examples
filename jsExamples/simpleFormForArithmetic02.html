@@ -1,0 +1,111 @@
+<!DOCtype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A Simple Form for Arithmetic</title>
+
+<script type="text/javascript">
+    // This function is called when the user clicks on the button labeled "Add Numbers"
+    function addNumbers() {
+        // Though this webpage uses console.log for debugging purposes, 
+        // it is not recommended that the finished product use console.log
+        var elem1stNum = document.getElementById("firstNumToAdd");
+        if (elem1stNum == null) {
+            console.log("Please check the HTML, it should contain an input field with id='firstNumToAdd'");
+        }
+        var elem2ndNum = document.getElementById("secondNumToAdd");
+        if (elem2ndNum == null) {
+            console.log("Please check the HTML, it should contain an input field with id='secondNumToAdd'");
+        }
+    
+        console.log("First number is " + elem1stNum.value);
+        console.log("Second number is " + elem2ndNum.value);
+    
+        // Get the two numbers, and add them
+        var sumOfNumbers = parseInt(elem1stNum.value) + parseInt(elem2ndNum.value);
+        console.log("sumOfNumbers = " + sumOfNumbers);
+    
+        // Place the sum in the output element
+        var elemOutput = document.getElementById("sum");
+        if (elemOutput != null) {
+            var msg = "The sum of the numbers is " + sumOfNumbers;
+            elemOutput.value = msg;
+            elemOutput
+        } else {
+            console.log("Please check the HTML, it should contain an output element with an id of 'sum'.")
+        }
+    }
+    
+    // This function is called when the user clicks on the button labeled "Multiply Numbers"
+    function multiplyNumbers() {
+        // Though this webpage uses console.log for debugging purposes, 
+        // it is not recommended that the finished product use console.log
+        var elem1stNum = document.getElementById("firstNumToMult");
+        if (elem1stNum == null) {
+            console.log("Please check the HTML, it should contain an input field with id='firstNumToMult'");
+        }
+        var elem2ndNum = document.getElementById("secondNumToMult");
+        if (elem2ndNum == null) {
+            console.log("Please check the HTML, it should contain an input field with id='secondNumToMult'");
+        }
+    
+        console.log("First number is " + elem1stNum.value);
+        console.log("Second number is " + elem2ndNum.value);
+    
+        // Get the two numbers, and multiply them
+        var productOfNumbers = parseInt(elem1stNum.value) * parseInt(elem2ndNum.value);
+        console.log("productOfNumbers = " + productOfNumbers);
+    
+        // Place the product in the output element
+        var elemOutput = document.getElementById("product");
+        if (elemOutput != null) {
+            var msg = "The product of the numbers is " + productOfNumbers;
+            elemOutput.value = msg;
+            elemOutput
+        } else {
+            console.log("Please check the HTML, it should contain an output element with an id of 'product'.")
+        }
+    }
+</script>
+</head>
+
+<body>
+This example webpage shows you how you can call functions when you click on a button. 
+This is the same as simpleFormForArithmetic01.html, but sets the button type attribute 
+to button, and removes the "return false;" statement after calling the onclick 
+event handler.
+<form>
+    <label for="firstNumToAdd">Please enter a number</label> 
+    <input id="firstNumToAdd" type="text" size="5" value="5">
+    <br>
+    <label for="secondNumToAdd">Please enter a second number</label>
+    <input id="secondNumToAdd" type="text" size="5" value="6">
+    <br>
+
+    <!-- 
+        Notice we added type="button" below, and that the onclick attribute is now 
+        set as onclick="addNumbers();", not as onclick="addNumbers(); return false;", 
+        as we had before.
+    -->
+    <button type="button" onclick="addNumbers();">Add Numbers</button>
+    <output id="sum"></output>
+</form>
+<br><br>
+<form>
+    <label for="firstNumToMult">Please enter a number</label> 
+    <input id="firstNumToMult" type="text" size="5" value="6">
+    <br>
+    <label for="secondNumToMult">Please enter a second number</label>
+    <input id="secondNumToMult" type="text" size="5" value="7">
+    <br>
+
+    <!-- 
+        Notice we added type="button" below, and that the onclick attribute is now 
+        set as onclick="addNumbers();", not as onclick="addNumbers(); return false;", 
+        as we had before.
+    -->
+    <button type="button" onclick="multiplyNumbers();">Multiply Numbers</button>
+    <output id="product"></output>
+</form>
+</body>
+</html>

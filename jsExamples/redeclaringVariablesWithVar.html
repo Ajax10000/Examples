@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redeclaring a variable with var</title>
+</head>
+<body>
+<h1>Please view the console.</h1>
+<p>
+    See <a target="_blank" href="https://stackoverflow.com/questions/6888506/redeclaring-a-javascript-variable">https://stackoverflow.com/questions/6888506/redeclaring-a-javascript-variable</a>
+    for more information.
+</p>
+
+<script type="text/javascript">
+var x = 3;
+console.log("x before redeclaration = " + x);
+
+// This redeclaration does NOT generate any errors.
+var x = -2;
+console.log("x after redeclaration = " + x);
+</script>
+</body>
+</html>

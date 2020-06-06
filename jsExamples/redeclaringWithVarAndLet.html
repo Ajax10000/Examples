@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redeclaring a variable with Var and Let</title>
+</head>
+<body>
+<h1>Please view the console.</h1>
+
+<script type="text/javascript">
+var x = 3;
+console.log("x before redeclaration = " + x);
+
+// This redeclaration generates an error in the console:
+// Uncaught SyntaxError: Identifier 'x' has already been declared
+let x = -2;
+console.log("x after redeclaration = " + x);
+</script>
+</body>
+</html>

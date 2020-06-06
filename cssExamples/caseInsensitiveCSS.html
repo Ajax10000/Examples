@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Add a title for your webpage -->
+    <title></title>
+
+    <!-- Add styles, if needed -->
+    <style type="text/css">
+        /* Uncomment the following to see that property names are not case sensitive. */
+        /*
+        P {
+            backGROUND-COLOR: red;
+            COLor: white;
+        }
+        pRe {
+            bacKGround-colOr: green;
+        }
+        */
+    </style>
+
+</head>
+
+<body>
+<p>
+    CSS is not case sensitive when it comes to specifying property names. 
+    Uncomment the embedded stylesheet rule in the head section to see that 
+    even though we used property names like "backGROUND-COLOR" and "COLor",
+    the property names are still processed correctly.
+</p>
+<p>
+    CSS is case-insensitive when it comes to specifying element selectors, but is 
+    case sensitive when specifying class and id selectors. For example, the following 
+    two element selectors will all work. Notice we are using 'P' and not 'p' - either 
+    one will work.
+    <pre>
+    P {
+        background-color: white;
+    }
+    </pre>
+</p>
+<p>
+    Notice we're using Div in the style below. We could have used div, DIV, diV, dIV, 
+    etc. Anyone of them would have worked.<br>
+    <pre>
+    Div {
+        margin-top: 20px;
+    }
+    </pre>
+</p>
+<p>
+    However, it is case-sensitive when it comes to class selectors and id selectors.
+    The class names must match, and the id selectors must match as well. Consider the 
+    snippet below:
+    <pre>
+    mytable {
+        border: 1px solid black;
+    }
+    ...
+    &lt;table class="myTable"&gt;
+    </pre>
+    This will not work as intended because "mytable" does not match "myTable". 
+    The table will <strong>not</strong> have a solid black border 1px wide.
+</p>
+<p>
+    Consider also the snippet below:
+    <pre>
+    #ChemData {
+        float: left;
+    }
+    ...
+    &lt;div id="chemData"&gt; 
+    </pre>
+    This will not work because "ChemData" does not match "chemData". So the 
+    div tag with id="chemData" will <strong>notk</strong> be floated left.
+</p>
+<p>
+    For more information, see this <a target="_blank" 
+    href="https://stackoverflow.com/questions/12533926/are-class-names-in-css-selectors-case-sensitive">
+    Stack Overflow article</a>.
+</p>
+</body>
+</html>

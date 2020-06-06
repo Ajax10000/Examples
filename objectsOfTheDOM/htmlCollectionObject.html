@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HTMLCollection Object</title>
+    <link rel="stylesheet" href="../css/objectReference.css" >
+</head>
+
+<body>
+<header>
+    <h1>The HTMLCollection Object</h1>
+    <p>
+        The HTMLCollection stores a collection of items in document order (that is, they 
+        appear in the HTMLCollection in the same order as they appear in the document).
+    </p>
+
+    <h2>Webpages on the HTMLCollection Object</h2>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection">https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection</a>
+        </li>
+    </ul>
+</header>
+
+<main>
+<!-- ######################################################################################### -->
+<section class="propertiesSecn">
+    <h2>Properties</h2>
+
+    <div class="property">
+    <h3 id="lengthProperty">length</h3>
+    <p>
+        Access: read only
+    </p>
+    <p>
+        The length property is an integer that indicates how many items there are in the 
+        HTMLCollection.
+    </p>
+    </div>
+</section>
+
+<!-- ######################################################################################### -->
+<section class="methodsSecn">
+    <h2>Methods</h2>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="itemMethod">item()</h3>
+    <p>
+        Arguments: 1, an integer indicating the index of the item in the HTMLCollection to 
+        return.
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>HTMLCollection</em>.item(<em>idx</em>);
+    </p>
+    <p>
+        Given an index i, the item(i) method returns the item in the HTMLCollection at that 
+        index. If i is outside the range of valid index values for the collection, then 
+        item(i) returns null.
+    </p>
+    </div>
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="namedItemMethod">namedItem()</h3>
+    <p>
+        Arguments: 1, a string representing the id or name of the item in the HTMLCollection 
+        to return.
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>HTMLCollection</em>.namedItem(<em>idOrName</em>);
+    </p>
+    <p>
+        Given a string, <em>HTMLCollection</em>.namedItem() returns the element whose id matches 
+        the given string. If no element has the given id, it returns the element whose name matches 
+        the given string. If no element has a matching name, then it returns null.
+    </p>
+    </div>
+</section>
+</main>
+</body>
+</html>

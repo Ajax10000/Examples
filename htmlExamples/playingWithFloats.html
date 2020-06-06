@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Playing with Floats</title>
+    <style>
+        div {
+            width: 150px;
+            border: 1px solid red; 
+        }
+    </style>
+</head>
+<body>
+<h1>Example 1</h1> 
+All divs floated left<br>
+<div style="float: left;">Left</div>
+<div style="float: left;">Middle</div>
+<div style="float: left;">Right</div>
+<br>
+
+<h1>Example 2</h1> 
+All divs floated right<br>
+<div style="float: right;">Left</div>
+<div style="float: right;">Middle</div>
+<div style="float: right;">Right</div>
+
+<!-- ========================================================================================= -->
+<br>
+<hr style="height: 4px; background-color: #000;">
+<h1>Example 3</h1> 
+Left div floated left, Middle div not floated, Right div floated right<br>
+<div style="float: left;">Left</div>
+<div>Middle</div>
+<div style="float: right;">Right</div>
+
+<h1>Example 4</h1> 
+Left div floated left, Middle div clears left, Right div floated right<br>
+<div style="float: left;">Left</div>
+<div style="clear: left;">Middle</div>
+<div style="float: right;">Right</div>
+
+<h1>Example 5</h1>
+Left div floated left, Middle div clears right, Right div floated right<br>
+<div style="float: left;">Left</div>
+<div style="clear: right;">Middle</div>
+<div style="float: right;">Right</div>
+
+<!-- ========================================================================================= -->
+<br>
+<hr style="height: 4px; background-color: #000;">
+<h1>Example 6</h1> 
+All divs floated left, except First div is not floated<br>
+<div>First</div>
+<div style="float: left;">Left</div>
+<div style="float: left;">Middle</div>
+<div style="float: left;">Right</div>
+<br>
+
+<h1>Example 7</h1> 
+All divs floated right, except First div is not floated<br>
+<div>First</div>
+<div style="float: right;">Left</div>
+<div style="float: right;">Middle</div>
+<div style="float: right;">Right</div>
+<br>
+
+<!-- ========================================================================================= -->
+<br>
+<hr style="height: 4px; background-color: #000;">
+<h1>Example 8</h1> 
+All divs floated left, except Last div is not floated<br>
+<div style="float: left;">Left</div>
+<div style="float: left;">Middle</div>
+<div style="float: left;">Right</div>
+<div>Last</div>
+<br>
+
+<h1>Example 9</h1> 
+All divs floated right, except Last div is not floated<br>
+<div style="float: right;">Left</div>
+<div style="float: right;">Middle</div>
+<div style="float: right;">Right</div>
+<div>Last</div>
+</body>
+</html>

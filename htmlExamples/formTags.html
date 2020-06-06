@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Form-related tags</title>
+</head>
+
+<body>
+<h1>The Form Tags</h1>
+<p>
+    This is a practice file - it will not be turned in nor graded. It is for you to learn from 
+    and experiment with. Many of the fields in the example forms here do not contain labels.
+    Consider it a challenge to add labels to these fields. This webpage does not use any CSS.
+    Consider it a challenge to add CSS to give this webpage a better "Wow!" factor.
+</p>
+<p>
+    Form-related tags are used to create forms, wherein people can enter data into fields for 
+    submission to a web server or be processed by a JavaScript program in the web browser. 
+    The form-related tags consist of:<br>
+    <a href="#form">form</a> - starts a form<br>
+    <a href="#button">button</a> - can be used to implement a submit or reset button, or just
+    a button that executes JavaScript code when clicked.<br>
+    <a href="#datalist">datalist</a> - used with input fields of type="list"<br>
+    <a href="#fieldset">fieldset</a> - a fieldset is used to group one or more input fields. For example, you may wish to 
+    group the input fields that provide an address.<br>
+    <a href="#input">input</a> - starts an input field. The type of input field created depends on the type 
+    attribute used.<br>
+    <a href="#label">label</a> - used to provide a label to the various input fields (including select tags and 
+    textarea tags). Note that option, datalist, fieldset and legend tags do not use labels. Also, 
+    the input type="submit" and input type="reset" buttons are typically not given labels. Their 
+    value attribute serves as their label.<br>
+    <a href="#legend">legend</a> - a legend is used to give a fieldset a title<br>
+    <a href="#option">option</a> - used to provide the options inside a select listbox.<br>
+    <a href="#select">select</a> - creates a drop-down listbox.<br>
+    <a href="#textarea">textarea</a> - somewhat similar to the input type="text" field, but a textarea lets you enter 
+    much more data.<br>
+</p>
+<p>
+    It is common to use the name attribute with the input, select, and textarea fields. This makes 
+    it easier to extract specific field information when it is processed in the code that runs on 
+    the server.
+</p>
+<p>
+    The input, select, textarea tags will also accept the readonly attribute, as well as the disabled 
+    attribute. The readonly attribute is used when you want the user to see what is currently in the 
+    field, but not be able to change it. The disabled attribute is used when you want to prevent the 
+    user from entering any data in the field (most likely because that field does not apply to the user.)
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="form">Form element</h2>
+<p>
+    A form element is used to create a grouping of input fields whose data will all be submitted to 
+    the same server when the form is submitted. A form starts with the &lt;form&gt; tag, and ends
+    with the closing &lt;/form&gt; tag. In between are various input fields, labels, fieldsets, 
+    legends, textarea and select elements. The data provided in these elements is sent off when 
+    the user clicks on the submit button.
+</p>
+<p>
+    Two attributes often used with a form whose associated data is to be submitted to a server are the 
+    method and the action attributes. Common values for the method are "post" and "put". Post is often 
+    used when submitting data that will be stored or processed on the server. Post is often used when 
+    submitting a file that will be stored at the server. For more information on the difference 
+    between post and put, see <a target="_blank" 
+    href="https://stackoverflow.com/questions/107390/whats-the-difference-between-a-post-and-a-put-http-request">here.</a>
+    If the submit method simply calls a JavaScript function, then there is no need for the action and 
+    method attributes in the form element. JavaScript contains functions that allows the webpage developer 
+    to read the values in the various input fields.
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="button">Button Element</h2>
+<p>
+    An button field is created like this:<br>
+    &lt;input type="button" type="<i>typeValue</i>" name="nameForButtonField" /&gt;<br>
+    Possible values for the type attribute are submit, reset, and button.
+    If none is specified, and the button appears within form tags, the default value for 
+    the type attribute is submit.
+</p>
+<p>
+    A common attribute for a button that calls a JavaScript function when it is clicked
+    is the onclick attribute. 
+</p>
+
+<h3>Examples using the button element</h3>
+<form>
+    <button type="button" onclick="alert('I changed my mind, don\'t click me!');">Click Me!</button>
+</form>
+<br>
+
+<form>
+    Would you like to play a game of Global Thermonuclear War?
+    <button value="Yes" type="button" 
+        onclick="alert('Ohhh, you don\'t know the mess this will cause!');">Yes</button> 
+    <button value="No"  type="button" 
+        onclick="alert('You are wise.');">No</button>
+</form>
+
+<h3>Webpages on the button element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_button.asp">https://www.w3schools.com/tags/tag_button.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the button element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.flinnsci.com/sds/">https://www.flinnsci.com/sds/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.applytexas.org/adappc/html/preview20/frs_1.html">https://www.applytexas.org/adappc/html/preview20/frs_1.html</a> (the button labeled "Go" in the upper right corner of the webpage)
+    </li>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="datalist">Datalist Element</h2>
+<p>
+
+</p>
+
+<h3>Examples using the datalist element</h3>
+<form>
+Favorite DC Universe hero: <input type="list" name="favDCHero" list="DCHeroes"><br>
+Favorite Marvel Universe hero: <input type="list" name="favMarvelHero" list="MarvelHeroes">
+<datalist id="DCHeroes">
+    <option>Superman</option>
+    <option>Batman</option>
+    <option>Flash</option>
+    <option>Wonderwoman</option>
+    <option>Aquaman</option>
+</datalist>
+
+<datalist id="MarvelHeroes">
+    <option>Captain America</option>
+    <option>Black Panther</option>
+    <option>Iron Man</option>
+    <option>Spiderman</option>
+    <option>Captain Marvel</option>
+</datalist>
+</form>
+
+<h3>Webpages on the datalist element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_datalist.asp">https://www.w3schools.com/tags/tag_datalist.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://demo.agektmr.com/datalist/">https://demo.agektmr.com/datalist/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.jotform.com/blog/html5-datalists-what-you-need-to-know-78024/">https://www.jotform.com/blog/html5-datalists-what-you-need-to-know-78024/</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the datalist element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="fieldset">Fieldset Element</h2>
+<p>
+
+</p>
+
+<h3>Examples using fieldset element</h3>
+No examples provided yet.
+
+<h3>Webpages on the fieldset element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_fieldset.asp">https://www.w3schools.com/tags/tag_fieldset.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use fieldsets</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.applytexas.org/adappc/html/preview20/frs_1.html">https://www.applytexas.org/adappc/html/preview20/frs_1.html</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.strandbooks.com/index.cfm/fuseaction/search.advancedSearchForm">https://www.strandbooks.com/index.cfm/fuseaction/search.advancedSearchForm</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input">Input Element</h2>
+<p>
+    The input field is discussed in <a href="inputElement.html">inputElement.html</a>. 
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="label">Label Element</h2>
+<p>
+
+</p>
+
+<h3>Examples using the label element</h3>
+No examples provided yet.
+
+<h3>Webpages on the label element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_label.asp">https://www.w3schools.com/tags/tag_label.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the label element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t">https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.applytexas.org/adappc/html/preview20/frs_1.html">https://www.applytexas.org/adappc/html/preview20/frs_1.html</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.strandbooks.com/index.cfm/fuseaction/search.advancedSearchForm">https://www.strandbooks.com/index.cfm/fuseaction/search.advancedSearchForm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="legend">Legend Element</h2>
+<p>
+
+</p>
+
+<h3>Examples using legend element</h3>
+No examples provided yet.
+
+<h3>Webpages on the legend element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_legend.asp">https://www.w3schools.com/tags/tag_legend.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the legend element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.strandbooks.com/index.cfm/fuseaction/search.advancedSearchForm">https://www.strandbooks.com/index.cfm/fuseaction/search.advancedSearchForm</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.applytexas.org/adappc/html/preview20/frs_1.html">https://www.applytexas.org/adappc/html/preview20/frs_1.html</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="option">Option Element</h2>
+<p>
+    The option element is used to give a value in the drop-down that appears when the down arrow 
+    is clicked on a select element. It is also used with the datalist element.
+</p>
+
+<h3>Examples using option element</h3>
+No examples provided yet.
+
+<h3>Webpages on the option element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_option.asp">https://www.w3schools.com/tags/tag_option.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the option element</h3>
+<p>
+    Any webpage that uses a select element will probably use several option 
+    elements as well. Hence to see webpages that use the option element, 
+    look at the webpages that use the select element.
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="select">Select Element</h2>
+<p>
+    A select element will, by default, only allow you to select one option. 
+    You can change that with the multiple attribute. Most browsers will only show 
+    one option of a select list. You can change that with the size attribute.
+</p>
+
+<h3>Examples using the select element</h3>
+<form>
+    Which of the following would you say is your favorite McDonald's hamburger?<br>
+    <select name="favBurger">
+        <option>Big Mac</option>
+        <option>Quarter Pounder</option>
+        <option>Double Quarter Pounder</option>
+        <option>Bacon Clubhouse Burger</option>
+    </select>
+</form>
+<br>
+<p>
+    The following select element uses the multiple option to allow you to select more 
+    than one item. On computers running the Windows operating system, after selecting the first 
+    one, you must click on the Ctrl key to select more choices. This select element also uses 
+    the size attribute to let you see all 4 choices at once.
+</p>
+<form>
+    Which of the following fast food restaurants do you go to?<br>
+    <select name="restaurantsPatronized" multiple size="4">
+        <option>McDonald's</option>
+        <option>Wendy's</option>
+        <option>Whatabuger</option>
+        <option>Taco Bell</option>
+    </select>
+</form>
+<br>
+The following select element has the disabled attribute. Note that you cannot tab into a disabled field.
+Furthermore, the value of a disabled field is not submitted to a server when the user submits the form.
+<form>
+    Select your highest level of education:<br>
+    <select name="eduLevel" disabled>
+        <option>None</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option selected>12 (High school degree/diploma)</option>
+        <option>Associate's degree</option>
+        <option>Bachelor's degree</option>
+        <option>Master's degree</option>
+        <option>Doctorate degree</option>
+    </select>
+</form>
+
+<h3>Webpages on the select element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_select.asp">https://www.w3schools.com/tags/tag_select.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use select elements</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.dfdhouseplans.com/">https://www.dfdhouseplans.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.dfdhouseplans.com/builders/">https://www.dfdhouseplans.com/builders/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t">https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.niche.com/colleges/search/best-colleges/?sat=0-600">https://www.niche.com/colleges/search/best-colleges/?sat=0-600</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="textarea">Texarea Element</h2>
+<p>
+    A textarea field is created like this:<br />
+    &lt;textarea name="<i>nameForTextareaField</i>" 
+    cols="<i>numOfColumns</i>" rows="<i>numOfRows</i>" /&gt;
+    &lt;/textarea&gt;<br />
+    This will create a rectangular area with the indicated number of columns 
+    and number of rows, in which the user can enter text.
+</p>
+<p>
+    Common attributes used with the textarea tag are the rows attribute 
+    (which indicates how many rows the textarea should span), the cols 
+    attribute (which indicates how many columns the textarea should span).
+</p>
+
+<h3>Examples that use textarea element</h3>
+The following textarea contains 5 rows and 60 columns.
+<form>
+    Please describe yourself in 250 characters or less.<br>
+    <textarea name="selfDescription" cols="60" rows="5"></textarea>
+</form>
+<br>
+
+The following textarea contains 3 rows and 60 columns.
+<form>
+    Please describe your dream car in 150 characters or less.<br>
+    <textarea name="selfDescription" cols="60" rows="3"></textarea>
+</form>
+<br>
+
+The following textarea contains 4 rows and 85 columns.
+<form>
+    Please describe your home town in 300 characters or less.<br>
+    <textarea name="selfDescription" rows="4" cols="85" ></textarea>
+</form>
+
+<h3>Webpages on the textarea element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_textarea.asp">https://www.w3schools.com/tags/tag_textarea.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use textarea elements</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.chem4free.info/">https://www.chem4free.info/</a>(textarea field is near bottom of the page)
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://xrjunque.nom.es/polycalc.aspx">https://xrjunque.nom.es/polycalc.aspx</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://thechemco.com/chemical/adipic-acid/">https://thechemco.com/chemical/adipic-acid/</a>(textarea field is near bottom of the page, with placeholder "Please note any special requirements")
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://translation.babylon-software.com/">https://translation.babylon-software.com/</a>
+    </li>
+</ul>
+</body>
+</html>

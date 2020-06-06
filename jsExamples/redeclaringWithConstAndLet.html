@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redeclaring a variable with const and let</title>
+</head>
+<body>
+<h1>Please view the console.</h1>
+<p>
+    See <a target="_blank" href="https://stackoverflow.com/questions/6888506/redeclaring-a-javascript-variable">https://stackoverflow.com/questions/6888506/redeclaring-a-javascript-variable</a>
+    for more information.
+</p>
+
+<script type="text/javascript">
+const x = 3;
+console.log("x before redeclaration = " + x);
+
+// This redeclaration generates an error in the console:
+// Uncaught SyntaxError: Identifier 'x' has already been declared
+let x = -2;
+console.log("x after redeclaration = " + x);
+</script>
+</body>
+</html>

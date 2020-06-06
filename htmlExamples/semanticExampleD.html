@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Second example of using semantic elements.</title>
+    <style type="text/css">
+        .content {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .headerFooter {
+            height: 150px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            background-color: yellow; 
+            color: black; 
+            font-size: 24px;
+            text-align: center;
+            clear: both;
+        }
+        .aside {
+            width: 15%;
+            height: 700px; 
+            background-color:green; 
+            color: white; 
+            font-size: 24px;
+        }
+        .asideLeft {
+            float: left; 
+        }
+        .asideRight {
+            float: right; 
+        }
+        .main { 
+            width: 70%; 
+            height: 700px; 
+            float: left;
+            background-color: blue; 
+            color: white; 
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="content">
+    <header class="headerFooter">
+        This is the header.
+    </header>
+
+    <aside class="aside asideLeft">
+        This is within an aside element, floated left.
+    </aside>
+
+    <aside class="aside asideRight">
+        This is within an aside element, floated right.
+    </aside>
+
+    <main class="main">
+        This is within the main element.
+    </main>
+
+    <footer class="headerFooter">
+        This is the footer.
+    </footer>
+</div>
+</body>

@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Input Element</title>
+</head>
+
+<body>
+<h1>Input Element</h1>
+<p>
+    Many different types of input fields can be created with the input element. Exactly which 
+    type of input field is created depends on the type attribute you use. The type attribute 
+    can have the following values:<br>
+    <a href="#input_TypeIsButton">button</a> - to allow the developer to display a button. 
+    Often used to call a JavaScript function after the user has filled in the appropriate fields.<br>
+    <a href="#input_TypeIsCheckbox">checkbox</a> - to allow the user to click on one or more 
+    check boxes<br>
+    <a href="#input_TypeIsColor">color</a> - to allow the user to click on a button 
+    that brings up a dialog box that allows the user to select a color. After the user selects 
+    a color, the color of the button is the color the user selected.<br>
+    <a href="#input_TypeIsDate">date</a> - to allow the user to enter a date<br>
+    <a href="#input_TypeIsDatetimeLocal">datetime-local</a> - to allow the user to enter 
+    a date and time, but without specifying a time 
+    zone<br>
+    <a href="#input_TypeIsEmail">email</a> - to allow the user to enter an e-mail address<br>
+    <a href="#input_TypeIsFile">file</a> - to allow the user to upload a file<br>
+    <a href="#input_TypeIsHidden">hidden</a> - to allow the developer to store extra hidden 
+    information within a form. Often this hidden information is information the user filled out 
+    in a previous form.<br>
+    <a href="#input_TypeIsImage">image</a> - to allow the user to use an image as a submit 
+    button<br>
+    <a href="#input_TypeIsList">list</a> - to allow the user to select an value from a dropdown list or enter any value<br>
+    <a href="#input_TypeIsMonth">month</a> - to allow the user to enter a month<br>
+    <a href="#input_TypeIsNumber">number</a> - to allow the user to enter a number<br>
+    <a href="#input_TypeIsPassword">password</a> - like a text field, but the user will typically 
+    only see asterisks or dots no matter what characters are typed in.<br>
+    <a href="#input_TypeIsRadio">radio</a> - to allow the user to select one of severl choices<br>
+    <a href="#input_TypeIsRange">range</a> - to allow the user to enter a numeric range<br>
+    <a href="#input_TypeIsReset">reset</a> - used to display a reset button. Once the user clicks 
+    on this button, all the fields. Often displayed at the bottom of the form.<br>
+    <a href="#input_TypeIsSearch">search</a> - to allow the user to enter search keywords used 
+    to perform a search<br>
+    <a href="#input_TypeIsSubmit">submit</a> - to display a submit button. Once the user clicks 
+    on this button, the data in the form is transferred to the server. Often displayed at the 
+    bottom of the form.<br>
+    <a href="#input_TypeIsTel">tel</a> - to allow the user to enter a telephone number<br>
+    <a href="#input_TypeIsText">text</a> - to allow the use to enter text<br>
+    in the form are cleared.<br>
+    <a href="#input_TypeIsTime">time</a> - to allow the user to enter a time by hour, minute, 
+    seconds and milliseconds.<br>
+    <a href="#input_TypeIsWeek">week</a> - to allow the user to enter a week<br>
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsButton">Buttons</h2>
+<p>
+    A button field is created like this:
+    &lt;input type="button" name="<i>buttonFieldName</i>" /&gt;
+</p>
+
+<h3>Examples using button fields</h3>
+No examples provided yet.
+
+<h3>Webpages on the button field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button</a>
+    </li>
+    <li>
+        <a target="_blank" href=""></a>
+    </li>
+</ul>
+
+<h3>Webpages that use button fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.christersvensson.com/calculator/">https://www.christersvensson.com/calculator/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_button.asp">https://www.w3schools.com/tags/att_input_type_button.asp</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsCheckbox">Checkbox fields</h2>
+<p>
+    Checkbox fields are created like this:<br>
+    &lt;input type="checkbox" name="<i>checkboxFieldName</i>" value="initialValue" /&gt;
+    <i>Description of checkbox value.</i>
+</p>
+<p>
+    Checkboxes are used to give the user non-exclusive choices. The user can select 
+    one or more of the choices presented.
+</p>
+<p>
+    In addition to the attributes all input fields share, the checkbox field also has
+    checked, readonly, and value attributes.
+</p>
+
+<h3>Examples using checkbox fields</h3>
+<form>
+    Which of the following describe your physical appearance?<br>
+    <input type="checkbox" name="tdah" value="10"/>Tall, dark and handsome<br>
+    <input type="checkbox" name="sdau" value="1" />Short, dark and ugly, with a crooked back, like the Hunchback of Notre Dame<br>
+    <input type="checkbox" name="gdlb" value="8" />Godlike, like Buddha<br>
+    <input type="checkbox" name="mhbs" value="9" />Medium height but strong, like Tarzan<br>
+    <input type="checkbox" name="bubr" value="11"/>Butt ugly, but filthy rich<br>
+</form>
+<br>
+<form>
+    What types of movies do you like to watch?<br>
+    <input type="checkbox" name="actionMovies" value="ac"/>Action<br>
+    <input type="checkbox" name="dramMovies" value="dr"/>Drama<br>
+    <input type="checkbox" name="fantasyMovies" value="fa"/>Fantasy<br>
+    <input type="checkbox" name="scifiMovies" value="sf"/>Science Fiction<br>
+    <input type="checkbox" name="horrorMovies" value="ho"/>Horror<br>
+    <input type="checkbox" name="documentaryMovies" value="do"/>Documentaries<br> 
+</form>
+<p>
+    Challenge - create a form with checkboxes asking the user what programming languages they 
+    are familiar with. Provide JavaScript, Java, C, C#, Ruby, and PHP as choices.
+</p>
+
+<h3>Webpages on the checkbox field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_checkbox.asp">https://www.w3schools.com/tags/att_input_type_checkbox.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use checkbox fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t">https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.niche.com/colleges/search/best-colleges/?sat=0-600">https://www.niche.com/colleges/search/best-colleges/?sat=0-600</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://penpals.phk.at/join.php">https://penpals.phk.at/join.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsColor">Color fields</h2>
+<p>
+    A color field is created like this:<br />
+    &lt;input type="color" name="<i>nameForColorField</i>" /&gt;<br />
+    This will create a small button with the currently selected color. Clicking on the 
+    small button brings up a dialog box from which you can select a new color.
+</p>
+
+<h3>Examples using color fields</h3>
+<form>
+    What is your favorite color? 
+    <input type="color" name="favColor" /><br>
+</form>
+
+<h3>Webpages on the color field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_color.asp">https://www.w3schools.com/tags/att_input_type_color.asp</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsDate">Date fields</h2>
+<p>
+    A datefield is created like this:<br>
+    &lt;input type="date" name="<i>nameForDateField</i>" />
+</p>
+
+<p>
+    The date field lets the user enter a day, month, and year in numeric format, 
+    to indicate a date.
+</p>
+
+<h3>Examples using date fields</h3>
+<form>
+    Enter the date you were born: 
+    <input type="date" name="birthday" />
+</form>
+<br>
+<form>
+    When did you work at your previous job?<br>
+    Start date: <input type="date" name="startDate" /><br>
+    End date: <input type="date" name="endDate" />
+</form>
+<br>
+<form>
+    Enter the date of Isaac Newton's birthday: 
+    <input type="date" name="isaacNewtonsBirthday" />
+</form>
+
+<h3>Webpages on the date field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_date.asp">https://www.w3schools.com/tags/att_input_type_date.asp</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsDatetimeLocal">Datetime-local fields</h2>
+<p>
+
+</p>
+
+<h3>Examples using datetime-local fields</h3>
+No examples provided yet.
+
+<h3>Webpages on the datetime-local field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_datetime-local.asp">https://www.w3schools.com/tags/att_input_type_datetime-local.asp</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsEmail">E-mail address fields</h2>
+<p>
+    E-mail fields are created like this:<br>
+    &lt;input type="email" name="<i>emailFieldName</i>" /&gt;
+</p>
+
+<h3>Examples using e-mail address fields</h3>
+<form>
+    Please enter your e-mail address: 
+    <input type="email" name="usernameEmail" /><br>
+</form>
+
+<h3>Webpages on the email field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_email.asp">https://www.w3schools.com/tags/att_input_type_email.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use email address fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.nysun.com/">https://www.nysun.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://info1.wyndhamcapital.com/purchase-dp">https://info1.wyndhamcapital.com/purchase-dp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.flinnsci.com/create-account/">https://www.flinnsci.com/create-account/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://my.lwv.org/washington/benton-franklin-counties/donate">https://my.lwv.org/washington/benton-franklin-counties/donate</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsFile">File fields</h2>
+<p>
+    File fields are created like this:<br>
+    &lt;input type="file" name="nameForFileField" /&gt;
+</p>
+
+<h3>Examples using file fields</h3>
+<form>
+    Please upload your resume (in text, .rtf, .doc, or .docx format):
+    <input type="file" name="resume" />
+</form>
+
+<form>
+    Please upload your essay (in .doc, or .docx format):
+    <input type="file" name="essay" />
+</form>
+
+<h3>Webpages on the file field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_file.asp">https://www.w3schools.com/tags/att_input_type_file.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use file fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.monster.com/resumes/post-resume2">https://www.monster.com/resumes/post-resume2</a>(the button labeled "Upload From My Computer")
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://xrjunque.nom.es/polycalc.aspx">https://xrjunque.nom.es/polycalc.aspx</a>(the button labeled "Choose File")
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsHidden">Hidden fields</h2>
+<p>
+    Hidden fields are used to place invisible input text fields in the form. When the form is 
+    submitted, the value of the hidden fields are sent also. They are often used in multiple 
+    page forms, where a user starts entering a data in a form, clicks a next button, and enters 
+    more data. The data from the first page is inserted into the second page via hidden fields.
+</p>
+<p>
+    A hidden field is created like this:<br>
+    &lt;input type="hidden" name="<i>myFieldName</i>" 
+    value="<i>valueForMyHiddenField</i>" /&gt;
+</p>
+
+<h3>Examples using hidden fields</h3>
+No examples provided yet.
+
+<h3>Webpages on the hidden field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_hidden.asp">https://www.w3schools.com/tags/att_input_type_hidden.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use hidden fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.credithuman.com">https://www.credithuman.com</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.delta.com/contactus/commentComplaint">https://www.delta.com/contactus/commentComplaint</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://info1.wyndhamcapital.com/purchase-dp">https://info1.wyndhamcapital.com/purchase-dp</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsImage">Image field</h2>
+<p>
+    The image field (not the img element, we're talking about the input element with 
+    type="image" here) is used to display an image, but when clicked on behaves like a 
+    submit button.
+</p>
+<p>
+    An image field is created like this:<br />
+    &lt;input type="image" src="<i>pathToImageFile</i>" 
+    name="<i>nameForImageField</i>" /&gt;<br />
+    This will create a button which appears as an image, which when clicked submits the form.
+</p>
+<p>
+    The image field attributes commonly used are alt, src, width, height, formaction, 
+    formenctype, formmethod, formnovalidate, and formtarget.
+</p>
+
+<h3>Examples using image fields</h3>
+No examples provided yet.
+
+<h3>Webpages on the image field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_image.asp">https://www.w3schools.com/tags/att_input_type_image.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use image fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories.html">https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories.html</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsList">List fields</h2>
+<p>
+    Creating a list field also means creating a datalist element.
+    A list field is created like this:<br />
+    &lt;input type="list" list="<i>idOfDataListElement</i>" 
+    name="<i>nameForListField</i>" /&gt;<br />
+    <br>
+    &ltdatalist id=<i>idOfDataListElement</i>&gt;<br>
+        &lt;option value="<i>value01</i>"&gt;<br>
+        &lt;option value="<i>value02</i>"&gt;<br>
+        &lt;option value="<i>value03</i>"&gt;<br>
+        &lt;option value="<i>value04</i>"&gt;<br>
+    &lt;/datalist&gt;<br>
+    This will create a text field in which the user can select an option from a dropdown list, 
+    or whatever value the user types in. The datalist that the list filed can contain any number of options.
+</p>
+<p>
+    A list field, like the select element, will give the user a dropdown list of elements from which 
+    to choose. However a list field, unlike a select element, will also accept whatever the user types in.
+</p>
+
+<h3>Examples using the input type="list" element</h3>
+<form>
+Favorite DC Universe hero: <input type="list" name="favDCHero" list="DCHeroes"><br>
+Favorite Marvel Universe hero: <input type="list" name="favMarvelHero" list="MarvelHeroes">
+<datalist id="DCHeroes">
+    <option>Superman</option>
+    <option>Batman</option>
+    <option>Flash</option>
+    <option>Wonderwoman</option>
+    <option>Aquaman</option>
+</datalist>
+
+<datalist id="MarvelHeroes">
+    <option>Captain America</option>
+    <option>Black Panther</option>
+    <option>Iron Man</option>
+    <option>Spiderman</option>
+    <option>Captain Marvel</option>
+</datalist>
+</form>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsMonth">Month fields</h2>
+<p>
+    A month field is created like this:<br />
+    &lt;input type="month" name="<i>nameForMonthField</i>"&gt;<br />
+    This will create an input field similar to a text field, in which the user 
+    can enter a month value and a year value.
+</p>
+
+<h3>Examples using month fields</h3>
+<form>
+    In what month were you born? 
+    <input type="month" name="birthMonth" /><br>
+</form>
+
+<h3>Webpages on the month field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/month</a>
+    </li>
+    <li>
+        <a target="_target" 
+        href="https://www.w3schools.com/tags/att_input_type_month.asp">https://www.w3schools.com/tags/att_input_type_month.asp</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsNumber">Number fields</h2>
+<p>
+    A number field is created like this:<br>
+    &lt;input type="number" name="<i>myNumberFieldName</i>" 
+    min="<i>minValue</i>" max="<i>maxValue</i>" step="<i>stepValue</i>" /&gt;
+</p>
+
+<h3>Examples using number fields</h3>
+<form>
+    What is your height?<br>
+    Feet: <input type="number" name="heightFt" size="3" min="0" max="9"/><br>
+    Inches: <input type="number" name="heightIn" size="3" min="0" max="11" /><br>
+</form>
+<p>
+    Challenge - create a form with a number field and ask the user to enter their weight.
+    Set the minimum value to 3, the maximum to 600.
+</p>
+
+<h3>Webpages on the number field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_number.asp">https://www.w3schools.com/tags/att_input_type_number.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the number field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.wufoo.com/html5/output-element/">https://www.wufoo.com/html5/output-element/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.findagrave.com/">https://www.findagrave.com/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsPassword">Password fields</h2>
+<p>
+    Password fields are like regular text fields in that they allow the user to enter text, 
+    but the characters the user types in are now shown. Instead an asterisk or dot is usually
+    displayed for each character typed in. So when the user is in a login page, anyone standing 
+    by cannot see what the user typed in for the password. (Of course, that doesn't prevent any 
+    person standing by from looking at what the user types on the keyboard.)
+</p>
+<p>
+    A password field is created like this:<br>
+    &lt;input type="password" name="<i>nameForMyPasswdField</i>" /&gt;
+</p>
+
+<h3>Examples using password fields</h3>
+<form>
+    Please enter your login credentials:<br>
+    Username <input type="text" name="username" size="20"/><br>
+    Password <input type="password" name="street2" size="10"/><br>
+</form>
+
+<h3>Webpages on the password field</h3>
+<ul>
+    <li>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://www.w3schools.com/tags/att_input_type_password.asp">https://www.w3schools.com/tags/att_input_type_password.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use password fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.alibris.com/account">https://www.alibris.com/account</a> (uses 3 password fields)
+    </li>
+    <li>
+        <a target="_blank"
+        href="https://www.applytexas.org/adappc/html/preview20/frs_1.html">https://www.applytexas.org/adappc/html/preview20/frs_1.html</a>
+        (uses password fields when asking user to provide SSN and confirm SSN)
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://penpals.phk.at/join.php">https://penpals.phk.at/join.php</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.firstmarkcu.org/">https://www.firstmarkcu.org/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsRadio">Radio button fields</h2>
+<p>
+    Radio button fields are created like this:<br>
+    &lt;input type="radio" name="<i>radiobuttonFieldName</i>" value="initialValue" /&gt;
+    <i>Description of radio button value.</i><br />
+    &lt;input type="radio" name="<i>radiobuttonFieldName</i>" value="initialValue" /&gt;
+    <i>Description of radio button value.</i><br />
+    A single radio button doesn't make sense, two or more radio button fields 
+    are typical. Furthermore, these radio button fields all have the same name.
+</p>
+<p>
+    Radio buttons are used to give the user a choice among several possiblities, but restrict the 
+    user to selecting only one choice.
+</p>
+
+<h3>Examples using radio button fields</h3>
+<form>
+    Would you like to donate your body to science upon death?<br>
+    <input type="radio" name="donateBody" value="1"/>Yes<br>
+    <input type="radio" name="donateBody" value="0"/>No<br>
+</form>
+<br>
+<form>
+    Which of the following describe your financial status?<br>
+    <input type="radio" name="finStatus" value="100"/>Super rich, annual salary > 1 billion<br>
+    <input type="radio" name="finStatus" value="90"/>Rich, annual salary >= 1 million<br>
+    <input type="radio" name="finStatus" value="80"/>Middle class, salary > 45,000<br>
+    <input type="radio" name="finStatus" value="50"/>Poor<br>
+</form>
+
+<p>
+    Challenge - create a form with 4 radio buttons, asking the user to indicate what
+    his or her favorite flavor of ice cream is. Give the user the choices of vanilla,
+    chocolate, rocky road, or mango.
+</p>
+<p>
+    Challenge - create a form with 12 radio buttons, asking the user to indicate what
+    his or her horoscope symbol is: Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, 
+    Scorpio, Sagittarius, Capricorn, Aquarius or Pisces.
+</p>
+
+<h3>Webpages on the radio field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_radio.asp">https://www.w3schools.com/tags/att_input_type_radio.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use radio buttons</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.dfdhouseplans.com/">https://www.dfdhouseplans.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t">https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsRange">Range fields</h2>
+<p>
+    A range fields allows the user to set a value from within a given range, kind of like sliding a knob 
+    from left to right. It also allows you to specify how large a jump occurs as you move the sliding 
+    knob from left to write (via the step attribute). However, the range field does not show you the 
+    min value, nor max value, nor the value that is currently selected via the slider position. So I 
+    find that to make best use of a range field is to use it with JavaScript code. A webpage that discusses
+    using range fields with JavaScript is <a target="_blank" href="https://www.geeksforgeeks.org/creating-range-slider-html-using-javascript/">https://www.geeksforgeeks.org/creating-range-slider-html-using-javascript/</a>.
+</p>
+<p>
+    Attributes asvailable with the range field are value, min, max, and step. 
+    The value attribute is used to specify a default value.
+    The min attribute is used to set the minimum value the user can select. 
+    The max attribute is used to set the maximum value the user can select. 
+    The step attribute is used to set the amount the currently value increases or 
+    decreases by. For example, if the current value is 50, and the step is 5, the current value can 
+    increase to 55, or decrease to 45, etc. 
+</p>
+
+<h3>Examples using range fields</h3>
+<form>
+    Approximately how many words can you type per minute? (Between 5 and 100)
+    <input type="range" name="wpm" min="5" max="100" value="60" step="5" /><br>
+</form>
+<p>
+    Challenge - 
+</p>
+
+<h3>Webpages on the range field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_range.asp">https://www.w3schools.com/tags/att_input_type_range.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use range fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.niche.com/colleges/search/best-colleges/?sat=0-600">https://www.niche.com/colleges/search/best-colleges/?sat=0-600</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsReset">Reset buttons</h2>
+<p>
+    A reset button is created like this:<br />
+    &lt;input type="reset" name="<i>nameForResetField</i>" /&gt;<br />
+    This will create a button which when clicked clears out the fields 
+    in the form.
+</p>
+<p>
+    To test the reset button, enter any values into the following fields and then click
+    the Reset button.
+</p>
+
+<h3>Examples using reset fields</h3>
+<form>
+    Please enter your street address:<br>
+    Street 1 <input type="text" name="street1" size="40"/><br>
+    Street 2 <input type="text" name="street2" size="40"/><br>
+    Apt No. <input type="text" name="apt" size="5" /><br>
+    City <input type="text" name="city" size="25" /><br>
+    State: <input type="text" name="state" size="2" /><br>
+
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" /><br>
+</form>
+<br>
+
+<h3>Webpages on the reset button</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/reset</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_reset.asp">https://www.w3schools.com/tags/att_input_type_reset.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use reset buttons</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.christersvensson.com/calculator/">https://www.christersvensson.com/calculator/</a>(the yellow button with the letter C (for Clear) is a reset button)
+    </li>
+    <li>
+        <a target="_blank"
+        href="https://www.chem4free.info/calculators/amount.htm">https://www.chem4free.info/calculators/amount.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsSearch">Search fields</h2>
+<p>
+    A search field is created like this:<br>
+    &lt;input type="search" name="<i>nameForSearchField</i>" />
+</p>
+
+<h3>Examples using search fields</h3>
+<form>
+    Search our library: <input type="search" name="searchText" placeholder="Enter keywords here." /><br>
+</form>
+<p>
+    Challenge - 
+</p>
+
+<h3>Webpages on the search field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_search.asp">https://www.w3schools.com/tags/att_input_type_search.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use search fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://unsplash.com/s/photos/robots">https://unsplash.com/s/photos/robots</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.firstmarkcu.org/">https://www.firstmarkcu.org/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.heb.com/recipe/recipe-item/grilled-asparagus/1392765670705">https://www.heb.com/recipe/recipe-item/grilled-asparagus/1392765670705</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://en.wikipedia.org/wiki/Numerical_analysis">https://en.wikipedia.org/wiki/Numerical_analysis</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsSubmit">Submit buttons</h2>
+<p>
+    A submit button is created like this:<br />
+    &lt;input type="submit" name="<i>nameForSubmitField</i>" value="<i>text to appear on button</i>" /&gt;<br />
+    This will create a button, which when clicked submits the value to a 
+    server. You can configure it to call a JavaScript function (which will then process the data).
+    A form can contain more than one submit button.
+</p>
+
+<h3>Examples using submit buttons</h3>
+<form>
+    <input type="submit" value="Submit"/>
+</form>
+<br>
+
+Here's another submit button, but with "Submit" written in Spanish<br>
+<form>
+    <input type="submit" value="Entregar" />
+</form>
+
+<h3>Webpages on submit buttons</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_submit.asp">https://www.w3schools.com/tags/att_input_type_submit.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use submit buttons</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.alibris.com/account">https://www.alibris.com/account</a> (the two buttons labeled "Sign in" are submit buttons)
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://as2.tamuk.edu:9203/PROD/bwpkedir.P_DisplayDirectory">https://as2.tamuk.edu:9203/PROD/bwpkedir.P_DisplayDirectory</a> (the submit button is labeled "Go")
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://penpals.phk.at/join.php">https://penpals.phk.at/join.php</a> (the button labeled "Join!" is a submit button)
+    </li>
+    <li>
+        <a target="_blank"
+        href="https://goldrushcure.org/donate/">https://goldrushcure.org/donate/</a> (the button labeled "Donate Now")
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsTel">Telephone fields</h2>
+<p>
+    A telephone field is created like this:<br>
+    &lt;input type="tel" name="<i>nameForTelephoneField</i>" /&gt;
+</p>
+
+<h3>Examples using telephone fields</h3>
+<form>
+    Please enter your cell phone number: <input type="tel" name="cellPhoneNum" size="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /> 
+    <small>Format: 123-456-7890</small>
+</form>
+<p>
+    Challenge - Create a small form that asks the user to supply a work, home and cell phone number.
+</p>
+
+<h3>Webpages on the telephone field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_tel.asp">https://www.w3schools.com/tags/att_input_type_tel.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use telephone fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.yrttf.org/contact">https://www.yrttf.org/contact</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://login.yahoo.com/account/create?.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%3F.src%3Dfp&src=ym&specId=yidReg">https://login.yahoo.com/account/create?.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd%3F.src%3Dfp&src=ym&specId=yidReg</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsText">Text fields</h2>
+<p>
+    A text field is used to allow the user to enter text data in a form. What type of text data? 
+    Well things like a first name, last name, middle name, street address, bank account number, etc. 
+    It can be used to allow the user to enter a number, but a number field is now recommended for that. 
+    It can also be used to allow the user to enter an e-mail address, but the e-mail field is now 
+    recommended for that. 
+    In addition, it can be used to allow the user to enter a telephone number, but the telephone field 
+    is now recommended for that.
+</p>
+<p>
+    A text field is created like this:<br>
+    &lt;input type="text" name="<i>nameForTextField</i>" />
+</p>
+<p>
+    Attributes commonly used with text fields are name, value, size, minlength, maxlength and 
+    required.
+    The size attribute tells the browser how wide to make the input field when it is displayed.
+    The maxlength attribute tells the browser the maximum number of characters the user is 
+    allowed to enter in the input field.
+    Of course, if you supply both minlength and maxlength attributes, the value of the minlength
+    attribute should be less than or equal to the value of the maxlength attribute.
+    The minlength attribute indicates the user must enter at least that many characters.
+    The required attribute, if specified, indicates the user must provide a value in the field.
+</p>
+
+<h3>Examples using text fields</h3>
+<form>
+    Please enter your street address:<br>
+    Street 1 <input type="text" name="street1" size="40"/><br>
+    Street 2 <input type="text" name="street2" size="40"/><br>
+    Apt No. <input type="text" name="apt" size="5" /><br>
+    City <input type="text" name="city" size="25" /><br>
+    State: <input type="text" name="state" size="2" /><br>
+</form>
+<br>
+<form>
+    Enter the chemical symbol for the element Einsteinium: 
+    <input type="text" size="2" minlength="1" maxlength="2" required />
+</form>
+<p>
+    Challenge - create a form with 3 input fields, asking the user 
+    to enter the titles of the last three books he or she has read.
+</p>
+
+<h3>Webpages on text fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_text.asp">https://www.w3schools.com/tags/att_input_type_text.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use text fields</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t">https://www.abebooks.com/servlet/SearchEntry?cm_sp=SearchF-_-home-_-Results&sts=t</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://new.trinity.edu/">https://new.trinity.edu/</a> (uses a text field with placeholder attribute: placeholder="Search Trinity" )
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.delta.com/contactus/commentComplaint">https://www.delta.com/contactus/commentComplaint</a> (any of the text fields on this webpage use the maxlength attribute)
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://thechemco.com/chemical/adipic-acid/">https://thechemco.com/chemical/adipic-acid/</a> (many text fields on this page use the placeholder attribute)
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsTime">Time fields</h2>
+<p>
+    A time field is created like this:<br />
+    &lt;input type="time" name="<i>nameForTimeField</i>" /&gt;<br />
+    This will create an input field similar to a text field, in which the 
+    user can enter a time (hour and minute), as well as indicate am or pm.
+</p>
+
+<h3>Examples using time fields</h3>
+<form>
+    At what time would you like your haircut? 
+    <input type="time" name="apptTime" /><br>
+</form>
+
+<h3>Webpages on the time field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_time.asp">https://www.w3schools.com/tags/att_input_type_time.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialrepublic.com/html-tutorial/html5-new-input-types.php#time-input">https://www.tutorialrepublic.com/html-tutorial/html5-new-input-types.php#time-input</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="input_TypeIsWeek">Week fields</h2>
+<p>
+    A week field is created like this:<br />
+    &lt;input type="week" name="<i>nameForWeekField</i>" /&gt;<br />
+    This will create an input field similar to a month field, but in which the 
+    user can enter a week indicated as an integer from 1 to 53, as well as a 
+    4-digit year.
+</p>
+
+<h3>Examples using week fields</h3>
+<form>
+    Enter some week: 
+    <input type="week" name="someName" />
+</form>>
+
+<h3>Webpages on the week field</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/week</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/att_input_type_week.asp">https://www.w3schools.com/tags/att_input_type_week.asp</a>
+    </li>
+</ul>
+</body>
+</html>

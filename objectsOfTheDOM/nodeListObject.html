@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The NodeList Object</title>
+    <link rel="stylesheet" href="../css/objectReference.css" >
+</head>
+
+<body>
+<header>
+    <h1>The NodeList Object</h1>
+    <p>
+        The Document object has several methods. Several of these methods return a NodeList object. 
+        For example, the <strong>getElementsByTagName</strong>, and <strong>querySelectorAll</strong>, 
+        methods return a NodeList. Here we discuss the properties and methods of the NodeList 
+        object.
+    </p>
+    <p>
+        A NodeList is similar to an array. An array stores a collection, and so does a NodeList. We 
+        call the elements of a NodeList <em>nodes</em>, because it stores a list of 
+        <a href="nodeObject.html">Node</a> objects. Like an array, the NodeList has a <strong>length</strong> 
+        property. Like an array, you can access the nodes of a NodeList with an index. You use the 
+        <strong>item</strong> method of NodeList to get a node from the NodeList: NodeList.item(<em>index</em>);
+        Like an array, the indices of a NodeList are 0-based. To retrieve a node from the NodeList, you can 
+        also use the same notation you would for an array: NodeList[<em>index</em>].
+    </p>
+    <p>
+        Differences are noted between <em>live</em> and <em>static</em> NodeLists. A live NodeList means 
+        that if the underlying DOM changes, so will the NodeList. A static NodeList will not change if 
+        the underlying DOM changes.
+    </p>
+
+    <h2>Webpages on the NodeList Object</h2>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList">https://developer.mozilla.org/en-US/docs/Web/API/NodeList</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/js/js_htmldom_nodelist.asp">https://www.w3schools.com/js/js_htmldom_nodelist.asp</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://attacomsian.com/blog/javascript-nodelist">https://attacomsian.com/blog/javascript-nodelist</a>
+        </li>
+    </ul>
+</header>
+
+<main>
+<!-- ######################################################################################### -->
+<section class="propertiesSecn">
+    <h2>Properties</h2>
+
+    <div class="property">
+    <h3 id="lengthProperty">length</h3>
+    <p>
+        Access: read only
+    </p>
+    <p>
+        Every NodeList object has a length attribute, a number indicating how many nodes are stored 
+        in the NodeList.
+    </p>
+    </div>
+</section>
+
+<!-- ######################################################################################### -->
+<section class="methodsSecn">
+    <h2>Methods</h2>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="entriesMethod">entries()</h3>
+    <p>
+        Arguments: 0<br>
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>nodeList</em>.entries();
+    </p>
+    <p>
+        The entries method returns an iterator that you can use in a for of loop.
+    </p>
+    <pre>
+        // The childNodes property is an object of type NodeList
+        var nodeList = document.body.childNodes;
+        for (var currNode of nodeList.entries()) {
+            console.log("currNode = " + currNode);
+        }
+    </pre>
+
+    <h4>Webpages on the NodeList.entries() method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/entries">https://developer.mozilla.org/en-US/docs/Web/API/NodeList/entries</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="forEachMethod">forEach()</h3>
+    <p>
+        Arguments: 2<br>
+        The first argument is a callback function which is called once with each node in the NodeList. 
+        This callback function shoud take 3 arguments, of which only the first is required, the remaining 
+        two being optional.<br>
+        The second argument is the value to use for <em>this</em> when calling the callback function.
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>nodeList</em>.forEach(<em>funcn</em>, <em>thisValue</em>)
+    </p>
+    <p>
+        As mentioned above, the callback can take up to 3 arguments. The first is the current node 
+        in the NodeList being processed. The second is the index of the current node being processed.
+        The third is the NodeList whose nodes are being processed.
+    </p>
+
+    <h4>Webpages on the NodeList.forEach() method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach">https://developer.mozilla.org/en-US/docs/Web/API/NodeList/forEach</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="itemMethod">item()</h3>
+    <p>
+        Arguments: 1, the index of the item in the NodeList to return
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>nodeList</em>.item(<em>idx</em>);
+    </p>
+
+    <h4>Webpages on the NodeList.item() method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/item">https://developer.mozilla.org/en-US/docs/Web/API/NodeList/item</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_nodelist_item.asp">https://www.w3schools.com/jsref/met_nodelist_item.asp</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.oreilly.com/library/view/javascript-the-definitive/0596101996/re410.html">https://www.oreilly.com/library/view/javascript-the-definitive/0596101996/re410.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <!-- 
+    <div class="method">
+    <h3 id="keysMethod">keys()</h3>
+    <p>
+        Arguments: 0<br>
+        <em>nodeList</em>.keys()
+    </p>
+
+    <h4>Webpages on the NodeList.keys() method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/NodeList/keys">https://developer.mozilla.org/en-US/docs/Web/API/NodeList/keys</a>
+        </li>
+    </ul>
+    </div>
+    -->
+
+<!-- ========================================================================================= -->
+    <!-- 
+    <div class="method">
+    <h3 id="valuesMethod">values()</h3>
+    <p>
+        
+    </p>
+
+    <h4>Webpages on the NodeList.values() method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+    </ul>
+    </div>
+    -->
+</section>
+</main>
+</body>
+</html>

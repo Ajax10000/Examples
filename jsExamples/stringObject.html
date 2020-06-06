@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>String Object</title>
+</head>
+
+<body>
+<h1>The String Object</h1>
+<p>
+    The String object represents a string. This object contains many methods. Many of them 
+    are discussed below.
+</p>
+<p>
+    Several of the String object's methods are now deprecated. This means they will probably 
+    be eliminated in a future version of JavaScript. It is recommended that you <strong>not</strong> 
+    use these deprecated methods. The deprecated methods are:
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/anchor">anchor</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/big">big</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/blink">blink</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/bold">bold</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fixed">fixed</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontcolor">fontcolor</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/fontsize">fontsize</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/italics">italics</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/link">link</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/small">small</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/strike">strike</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/sub">sub</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/sup">sup</a>
+        </li>
+    </ul>
+</p>
+<p>
+    The deprecated methods are not discussed below.
+</p>
+
+<h2>Methods</h3>
+
+<!-- ######################################################################################### -->
+<h3 id="charAt">charAt</h3>
+
+<p>
+    The charAt method takes one parameter, an integer representing an index 
+    into the string. The string's indices go from 0 to (the length of the string - 1).
+    For example the string "abc" is of length 3, and its indices go from to to 2.
+</p>
+<p>
+    The charAt method returns the character at a specific index of the string.
+    Examples:<br>
+    "abc".charAt(0) returns "a"<br>
+    "abc".charAt(1) returns "b"<br>
+    "abc".charAt(2) returns "c"<br>
+</p>
+<p>
+    Code Example:
+    <form>
+        Enter string: <input id="stringForCharAt" type="text" size="30" />
+        <br>
+        Enter index: <input id="indexForCharAt" type="text" size="4" />
+        <br>
+        <button type="button" onclick="getCharAt()">Get char at given index</button> 
+        <output id="01"></output>
+    </form>
+</p>
+<script type="text/javascript">
+    function getCharAt() {
+        // Get user's input
+        let inputElemForString = document.getElementById("stringForCharAt");
+        let inputElemForIndex = document.getElementById("indexForCharAt");
+        let inputString = inputElemForString.value;
+        let index = inputElemForIndex.value;
+
+        // Call String object's charAt method
+        let outputText = inputString.charAt(index);
+
+        // Show the result to the user
+        let outputElem = document.getElementById("01");
+        outputElem.value = outputText;
+    }
+</script>
+
+<h4>Webpages on the charAt method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charAt</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_charat.asp">https://www.w3schools.com/jsref/jsref_charat.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_charat.htm">https://www.tutorialspoint.com/javascript/string_charat.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="charCodeAt">charCodeAt</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the charCodeAt method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_charcodeat.asp">https://www.w3schools.com/jsref/jsref_charcodeat.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_charcodeat.htm">https://www.tutorialspoint.com/javascript/string_charcodeat.htm</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.techonthenet.com/js/string_charcodeat.php">https://www.techonthenet.com/js/string_charcodeat.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="concat">concat</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the concat method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_concat_string.asp">https://www.w3schools.com/jsref/jsref_concat_string.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_concat.htm">https://www.tutorialspoint.com/javascript/string_concat.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="endsWith">endsWith</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the endsWith method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_endswith.asp">https://www.w3schools.com/jsref/jsref_endswith.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.techonthenet.com/js/string_endswith.php">https://www.techonthenet.com/js/string_endswith.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="fromCharCode">fromCharCode</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the fromCharCode method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_fromcharcode.asp">https://www.w3schools.com/jsref/jsref_fromcharcode.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.techonthenet.com/js/string_fromcharcode.php">https://www.techonthenet.com/js/string_fromcharcode.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="includes">includes</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the includes method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_includes.asp">https://www.w3schools.com/jsref/jsref_includes.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.techonthenet.com/js/string_includes.php">https://www.techonthenet.com/js/string_includes.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="indexOf">indexOf</h3>
+<p>
+    Given a substring, the indexOf method returns an integer giving the index in the string at 
+    which the substring can be found. If the substring cannot be found in the string, indexOf 
+    returns -1. An example is shown below.
+</p>
+<pre>
+    var animalsOfAfrica = "lions, cheetahs, leopards, elephants, giraffes, zebras, hyenas";
+    var animalsOfAmerica = "jaguars, pumas, bobcat, bison, wolverines, beavers, pronghorn deer";
+    var animal = prompt("Please enter the name of an animal");
+
+    if (animal != null) {
+        animal = animal.toLowerCase();
+        if (animalsOfAfrica.indexOf(animal) != -1) {
+            alert("That animal lives in Africa.");
+        } else if (animalsOfAmerica.indexOf(animal) != - 1) {
+            alert("That animal lives in North or South America");
+        } else {
+            alert("I'm not sure where that animal lives.");
+        }
+    }
+</pre>
+
+<h4>Webpages on the indexOf method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_indexof.asp">https://www.w3schools.com/jsref/jsref_indexof.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_indexof.htm">https://www.tutorialspoint.com/javascript/string_indexof.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="lastIndexOf">lastIndexOf</h3>
+<p>
+
+</p>
+
+<h4>Webpages on the lastIndexOf method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_lastindexof.asp">https://www.w3schools.com/jsref/jsref_lastindexof.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_lastindexof.htm">https://www.tutorialspoint.com/javascript/string_lastindexof.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="localeCompare">localeCompare</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the localeCompare method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_localecompare.asp">https://www.w3schools.com/jsref/jsref_localecompare.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_localecompare.htm">https://www.tutorialspoint.com/javascript/string_localecompare.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="match">match</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the match method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_match.asp">https://www.w3schools.com/jsref/jsref_match.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_match.htm">https://www.tutorialspoint.com/javascript/string_match.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="repeat">repeat</h3>
+<p>
+    Arguments: 1<br>
+    The repeat method takes one parameter, a non-negative integer, between 0 and +Infinity.
+    Providing a negative integer will generate a RangeError. If the integer provided generates 
+    a string that exceeds the maximum string length, a RangeError is generated. According to 
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length">
+    this reference</a>, the maximum string length per ECMAScript 2016 is 2<sup>53</sup> - 1.
+</p>
+<p>
+    Call syntax:<br>
+    <em>string</em>.repeat(<em>nonNegativeInteger</em>);
+</p>
+<p>
+    Given a non-negative integer n, the repeat method will repeat a string n times. Examples:<br>
+    "a".repeat(3) returns "aaa"<br>
+    "n".repeat(5) returns "nnnnn"<br>
+    "ab".repeat(2) returns "abab"<br>
+    "water".repeat(5) returns "waterwaterwaterwaterwater"<br>
+</p>
+
+<h4>Webpages on the repeat method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_repeat.asp">https://www.w3schools.com/jsref/jsref_repeat.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.techonthenet.com/js/string_repeat.php">https://www.techonthenet.com/js/string_repeat.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="replace">replace</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the replace method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_replace.asp">https://www.w3schools.com/jsref/jsref_replace.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_replace.htm">https://www.tutorialspoint.com/javascript/string_replace.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="search">search</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the search method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_search.asp">https://www.w3schools.com/jsref/jsref_search.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_search.htm">https://www.tutorialspoint.com/javascript/string_search.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="slice">slice</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the slice method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_slice_string.asp">https://www.w3schools.com/jsref/jsref_slice_string.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_slice.htm">https://www.tutorialspoint.com/javascript/string_slice.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="split">split</h3>
+<p>
+    Arguments: 1<br>
+    The split method takes a longer string, usually containing a character that is repeated in the string 
+    like a comma (,), semicolon (;), colon (:), dash (-), etc. The split method, given a string, will then 
+    return an array where each element is a substring of the original string, which has been split at 
+    each occurrence of the given argument. Examples are shown below.
+</p>
+<p>
+    <pre>
+    var states = "Alabama, Alaska, Arizona, Arkansas";
+    var arrayOfAStates = states.split(",");
+    </pre>
+    After the above statements executes, arrayOfAStates will be an array of length 4 with 
+    arrayOfAStates[0] = "Alabama", arrayOfAStates[1] = "Alaska", arrayOfASttes[2] = Arizona, and 
+    arrayOfAStates[3] = "Arkansas".
+</p>
+
+<h4>Webpages on the split method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_split.asp">https://www.w3schools.com/jsref/jsref_split.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_split.htm">https://www.tutorialspoint.com/javascript/string_split.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="startsWith">startsWith</h3>
+<p>
+    Arguments: 1, a substring
+</p>
+<p>
+    The startsWith method takes a substring and checks to see if the string starts with that substring,
+    returning true if the string starts with the substring, returning false otherwise.
+</p>
+
+<h4>Webpages on the startsWith method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_startswith.asp">https://www.w3schools.com/jsref/jsref_startswith.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.techonthenet.com/js/string_startswith.php">https://www.techonthenet.com/js/string_startswith.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="substr">substr</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the substr method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_substr.asp">https://www.w3schools.com/jsref/jsref_substr.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_substr.htm">https://www.tutorialspoint.com/javascript/string_substr.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="substring">substring</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the substring method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_substring.asp">https://www.w3schools.com/jsref/jsref_substring.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_substring.htm">https://www.tutorialspoint.com/javascript/string_substring.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="toLocaleLowerCase">toLocaleLowerCase</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the toLocaleLowerCase method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleLowerCase">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleLowerCase</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_tolocalelowercase.asp">https://www.w3schools.com/jsref/jsref_tolocalelowercase.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_tolocalelowercase.htm">https://www.tutorialspoint.com/javascript/string_tolocalelowercase.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="toLocaleUpperCase">toLocaleUpperCase</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the toLocaleUpperCase method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_tolocaleuppercase.asp">https://www.w3schools.com/jsref/jsref_tolocaleuppercase.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_tolocaleuppercase.htm">https://www.tutorialspoint.com/javascript/string_tolocaleuppercase.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="toLowerCase">toLowerCase</h3>
+<p>
+    Arguments: 0<br>
+</p>
+<p>
+    The toLowerCase method takes no parameters. The toLowerCase method converts every character 
+    in the given string to lower case characters. Examples:<br>
+    "Alphabet".toLowerCase() returns "alphabet"<br>
+    "ALPHABET".toLowerCase() returns "alphabet"<br>
+    "alPhabet".toLowerCase() returns "alphabet"<br>
+    "alphabet".toLowerCase() returns "alphabet"<br>
+</p>
+<p>
+    Code Example:
+    <form>
+        Enter string: <input id="stringFor_toLowerCase" type="text" size="30" />
+        <br>
+        <button type="button" onclick="getToLowerCase()">Call toLowerCase on given string</button> 
+        <output id="tlc"></output>
+    </form>
+</p>
+<script type="text/javascript">
+    function getToLowerCase() {
+        // Get user's input
+        let inputElemForString = document.getElementById("stringFor_toLowerCase");
+        let inputString = inputElemForString.value;
+
+        // Call String object's toLowerCase method
+        let outputText = inputString.toLowerCase();
+
+        // SHow the result to the user
+        let outputElem = document.getElementById("tlc");
+        outputElem.value = outputText;
+    }
+</script>
+
+<h4>Webpages on the toLowerCase method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_tolowercase.asp">https://www.w3schools.com/jsref/jsref_tolowercase.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_tolowercase.htm">https://www.tutorialspoint.com/javascript/string_tolowercase.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="toString">toString</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the toString method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_tostring_string.asp">https://www.w3schools.com/jsref/jsref_tostring_string.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_tostring.htm">https://www.tutorialspoint.com/javascript/string_tostring.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="toUpperCase">toUpperCase</h3>
+<p>
+    The toUpperCase method takes no parameters. The toUpperCase method converts every character 
+    in the given string to upper case characters. Examples:<br>
+    "Alphabet".toUpperCase() returns "ALPHABET"<br>
+    "ALPHABET".toUpperCase() returns "ALPHABET"<br>
+    "alPhabet".toUpperCase() returns "ALPHABET"<br>
+    "alphabet".toUpperCase() returns "ALPHABET"<br>
+</p>
+<p>
+    Code Example:
+    <form>
+        Enter string: <input id="stringFor_toUpperCase" type="text" size="30" />
+        <br>
+        <button type="button" onclick="getToUpperCase()">Call toUpperCase on given string</button> 
+        <output id="tuc"></output>
+    </form>
+</p>
+<script type="text/javascript">
+    function getToUpperCase() {
+        // Get user's input
+        let inputElemForString = document.getElementById("stringFor_toUpperCase");
+        let inputString = inputElemForString.value;
+
+        // Call String object's toUpperCase method
+        let outputText = inputString.toUpperCase();
+
+        // SHow the result to the user
+        let outputElem = document.getElementById("tuc");
+        outputElem.value = outputText;
+    }
+</script>
+
+<h4>Webpages on the toUpperCase method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_touppercase.asp">https://www.w3schools.com/jsref/jsref_touppercase.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_touppercase.htm">https://www.tutorialspoint.com/javascript/string_touppercase.htm</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="trim">trim</h3>
+<p>
+    Arguments: 0<br>
+</p>
+<p>
+    The trim method takes no parameters. The trim method deletes every leading and trailing 
+    whitespace character in the string. That is, it deletes every whitespace character in
+    the front of the string and the back of the string. What is a whitespace character? The 
+    whitespace charcters include spaces, tabs, carriage returns, new lines characters, 
+    vertical tab characters and the form feed characters.
+    Examples:<br>
+    "    Alphabet ".trim() returns "Alphabet"<br>
+    "ALPHABET".trim() returns "ALPHABET"<br>
+    "   Printer".trim() returns "Printer"<br>
+    "television     ".trim() returns "television"<br>
+</p>
+<p>
+    Code Example:
+    <form>
+        Enter string: <input id="stringFor_trim" type="text" size="30" /> 
+        <output id="lengthOfOrigString"></output>
+        <br>
+        <button type="button" onclick="getTrim()">Call trim on given string</button> 
+        <output id="trm"></output>
+        <output id="lengthOfTrimmedString"></output>
+    </form>
+</p>
+<script type="text/javascript">
+    function getTrim() {
+        // Get user's input
+        let inputElemForString = document.getElementById("stringFor_trim");
+        let originalInputString = inputElemForString.value;
+    
+        // Display length of the original string
+        let outputElem_LengthOfOrigString = document.getElementById("lengthOfOrigString");
+        outputElem_LengthOfOrigString.value = "Length of original string = " + originalInputString.length;
+
+        // Call String object's trim method
+        let inputStringTrimmed = originalInputString.trim();
+
+        // Show the trimmed string to the user
+        let outputElem = document.getElementById("trm");
+        outputElem.value = inputStringTrimmed;
+
+        // Show the user the trimmed string's length
+        let outputElem_LengthOfTrimmedString = document.getElementById("lengthOfTrimmedString");
+        outputElem_LengthOfTrimmedString.value = "Length of trimmed string = " + inputStringTrimmed.length;
+    }
+</script>
+
+<h4>Webpages on the trim method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_trim_string.asp">https://www.w3schools.com/jsref/jsref_trim_string.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.techonthenet.com/js/string_trim.php">https://www.techonthenet.com/js/string_trim.php</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h3 id="valueOf">valueOf</h3>
+<p>
+    
+</p>
+
+<h4>Webpages on the valueOf method</h4>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/valueOf</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/jsref/jsref_valueof_string.asp">https://www.w3schools.com/jsref/jsref_valueof_string.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.tutorialspoint.com/javascript/string_valueof.htm">https://www.tutorialspoint.com/javascript/string_valueof.htm</a>
+    </li>
+</ul>
+
+</body>
+</html>

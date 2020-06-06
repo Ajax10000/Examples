@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3 Ways of Using CSS</title>
+</head>
+
+<body>
+There are three ways you can use cascading stylesheets.
+<ol>
+    <li>
+        Linked. Store your styles in a .css file and pull the file into your webpage with the 
+        link tag. 
+    </li>
+    <li>
+        Embedded. Place your styles at the top of your webpage within the head tag, in between the 
+        &lt;style&gt; and &lt;/style&gt; tags.
+    </li>
+    <li>
+        Inline. Place your styles directly on the element being styled, with the style attribute. 
+        For example, here is one way you can center the text in a paragraph, and give the
+        paragraph a yellow background, using the following: &lt;p style="text-align: center;
+        background-color: yellow;"&gt;
+        <p style="text-align: center; background-color: yellow">
+            Hello everybody. I am text within a paragraph tag. I hope you can all see me, and 
+            notice that I am centered. Not a fancy thing really. Note also that the background
+            of this paragraph is yellow. 
+        </p>
+    </li>
+</ol>
+<p>
+    Method 1 is the preferred choice, as by modifying one file you update the style in 
+    ll webpages that use that stylesheet. You can use multiple link tags to pull in 
+    multiple external stylesheets. Keep in mind that if a style is specified twice, the 
+    one in the link tag that was pulled in later will override the style that was specified 
+    in the stylesheet pulled in with the first link tag.
+</p>
+<p>
+    For example, suppose you are using two external stylesheets, named companyStyleDG102.css 
+    and  companyStyleBA2045.css, both stored in a subfolder called css. Both of these 
+    stylesheets have a style rule named .submitBtn. You then pull these external in the 
+    following order:<br>
+    &lt;link rel="stylesheet" href="css/companyStleDG102.css"&gt;<br>
+    &lt;link rel="stylesheet" href="css/companyStyleBA2045.css"&gt;<br>
+    Then the style named .submitBtn in companyStyleBA2045.css will override the style
+    named .submitBtn in companyStyleDG102.css.
+</p>
+<p>
+    Method 2 is not as preferred as 1, but is more preferrable than using method 3.
+    Method 2 can be used to override styles brought in the external stylesheet via 
+    the link tag. Just be sure to place your style tag <em>after</em> the link tag.
+</p>
+<p>
+    Method 3 is not as preferred as methods 1 and 2. But it can be used to override 
+    the styles used with methods 1 and 2. However, it is much harder to maintain the 
+    styles by using method 3.
+</p>
+<p>
+    However, you can also use more than one method, these methods are not mutually exclusive; 
+    in fact, you could use all three methods for the same webpage if you wanted to.
+</p>
+</body>
+</html>

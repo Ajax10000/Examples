@@ -1,0 +1,85 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+
+    <script type="text/javascript">
+    // This function is called when the user clicks on the button 
+    // labeled "Call forLoop function".
+    function forLoop() {
+        var i;
+        var sum = 0;
+
+        // Calculate sum - the sum of integers from 1 to 50
+        for(i = 1; i <= 50; i++) {
+            sum = sum + i;
+        }
+        let outputElem = document.getElementById("forLoopOutput");
+        outputElem.value = sum;
+    }
+
+    // This function is called when the user clicks on the button 
+    // labeled "Call whileLoop function".
+    function whileLoop() {
+        var i = 1;
+        var sum = 0;
+
+        // Calculate sum - the sum of integers from 1 to 50
+        while(i <= 50) {
+            sum = sum + i;
+            i++;
+        }
+
+        let outputElem = document.getElementById("whileLoopOutput");
+        outputElem.value = sum;
+    }
+
+    // This function is called when the user clicks on the button 
+    // labeled "Call doWhileLoop function".
+    function doWhileLoop() {
+        var i = 1;
+        var sum = 0;
+
+        // Calculate sum - the sum of integers from 1 to 50
+        do {
+            sum = sum + i;
+            i++;
+        } while (i<=50)
+
+        let outputElem = document.getElementById("doWhileLoopOutput");
+        outputElem.value = sum;
+    }
+    </script>
+</head>
+
+<body>
+<p>
+    Each of the following buttons, when clicked, will call a function that will 
+    add the integers from 1 to 50 and print out the result next to the button.
+</p>
+<div>
+    <button type="button" id="forLoopBtn">Call forLoop function</button>
+    <output id="forLoopOutput"></output>
+</div>
+<br>
+<div>
+    <button type="button" id="whileLoopBtn">Call whileLoop function</button>
+    <output id="whileLoopOutput"></output>
+</div>
+<br>
+<div>
+    <button type="button" id="doWhileBtn">Call doWhileLoop function</button>
+    <output id="doWhileLoopOutput"></output>
+</div>
+
+<script type="text/javascript">
+var forLoopBtn = document.getElementById("forLoopBtn");
+var whileLoopBtn = document.getElementById("whileLoopBtn");
+var doWhileBtn = document.getElementById("doWhileBtn");
+
+forLoopBtn.addEventListener("click", forLoop);
+whileLoopBtn.addEventListener("click", whileLoop);
+doWhileBtn.addEventListener("click", doWhileLoop);
+</script>
+</body>
+</html>

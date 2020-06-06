@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Table tags</title>
+    <style type="text/css">
+        .borderedCellsTable th {
+            border: 1px solid black;
+        }
+        .borderedCellsTable td {
+            border: 1px solid black;
+        }
+        .borderedRowsTable {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        .borderedRowsTable td, th {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+
+<body>
+<h1>The Table Tags</h1>
+<p>
+    This is a practice file - it will not be turned in nor graded. It is for you to learn from 
+    and experiment with.
+</p>
+<p>
+    HTML allows you to create tables with the following tags:<br>
+    table - starts a table<br>
+    tr - starts a table row<br>
+    td - starts a table cell within a row (think of td as table data)<br>
+    th - used to create special table cells in the first row of a table, called 
+    table headers<br>
+    caption - used to give a caption to a table<br>
+    thead - used around one or more tr tags, to indicate that these rows are part 
+    of the table head and contain no data, just titles or explanatory information<br>
+    tbody - used around one or more tr tags, to indicate that these rows contain the 
+    data portion of the table<br>
+    tfoot - used around one or more tr tags, to indicate that these rows are part 
+    of the table foot.
+</p>
+
+<h3>Webpages that use the table element</h3>
+<ul>
+    <li>
+        <a target="_blank" href="https://www.davesite.com/humor/top10/001.shtml">https://www.davesite.com/humor/top10/001.shtml</a> (this webpage does not use HTML5, but an earlier version)
+    </li>
+    <li>
+        <a target="_blank" href="https://www.lacamaslabs.com/24-dichloropyrimidine/">https://www.lacamaslabs.com/24-dichloropyrimidine/</a>
+    </li>
+</ul>
+<p>
+    Below you will see some examples of tables.
+</p>
+
+<!-- ========================================================================================= -->
+<h2>A 2x2 table with no border</h2>
+<table>
+    <!-- First row of table -->
+    <tr>
+        <td>first row, first column</td>
+        <td>first row, second column</td>
+    </tr>
+    <!-- Second row of table -->
+    <tr> 
+        <td>second row, first column</td>
+        <td>second row, second column</td>
+    </tr>
+</table>
+
+<!-- ========================================================================================= -->
+<h2>A 2x2 table with a border</h2>
+A table can be given a border by styling it with the border and, if necessary,
+the border-collapse property. The table below has been given a black border.
+<table style="border: 1px solid black;">
+    <!-- First row of table -->
+    <tr>
+        <td>first row, first column</td>
+        <td>first row, second column</td>
+    </tr>
+    <!-- Second row of table -->
+    <tr> 
+        <td>second row, first column</td>
+        <td>second row, second column</td>
+    </tr>
+</table>
+
+<!-- ========================================================================================= -->
+<h2>A 3x3 table with a red, collapsed border and headers</h2>
+<p>
+    It is created with 3 pairs of &lt;tr&gt; and &lt;/tr&gt; tags, to 
+    create 3 rows. Each row contains 3 pairs of either &lt;th&gt; and &lt;/th&gt;
+    or &lt;td&gt; and &lt;/td&gt; tags to create 3 cells (which make up 3 three 
+    columns in each row).
+</p>
+<table style="border: 1px solid red; border-collapse: collapse;">
+    <!-- First row of table, with headers (i.e., using th instead of td) -->
+    <tr>
+        <!-- 
+            By default, the th element displays its text in bold 
+            It will also display as if it had the style display: table-cell 
+            CSS property 
+        -->
+        <th>first row, first column</th>
+        <th>first row, second column</th>
+        <th>first row, third column</th>
+    </tr>
+    <!-- Second row of table -->
+    <tr> 
+        <td>second row, first column</td>
+        <td>second row, second column</td>
+        <td>second row, third column</td>
+    </tr>
+    <!-- Third row of table -->
+    <tr> 
+        <td>third row, first column</td>
+        <td>third row, second column</td>
+        <td>third row, third column</td>
+    </tr>
+</table>
+
+<h2>A table with a head and body (i.e., uses thead and tbody elements)</h2>
+<p>
+    The thead element indicates that the enclosed rows contain no data, just 
+    titles. The tbody element indicates that the enclosed rows contain data.
+</p>
+<table style="border: 1px solid black; border-collapse: collapse;">
+<thead>
+    <!-- First row of table, with headers (i.e., using th instead of td) -->
+    <!-- By default, the th element displays its text in bold -->
+    <tr>
+        <th colspan="2" style="text-align: center;">Acids</th>
+    </tr>
+    <!-- Second row of table -->
+    <tr> 
+        <th>Compound Name</th>
+        <th>Compound Formula</th>
+    </tr>
+</thead>
+<tbody>
+    <tr> 
+        <td>Nitric acid</td>
+        <td>HNO<sub>3</sub></td>
+    </tr>
+    <tr> 
+        <td>Sulfuric acid</td>
+        <td>H<sub>2</sub>SO<sub>4</sub></td>
+    </tr>
+    <tr>
+        <td>Carbonic acid</td>
+        <td>H<sub>2</sub>CO<sub>3</sub></td>
+    </tr>
+</tbody>
+</table>
+
+<h2>A table with a head, body, footer (i.e., uses thead, tbody and tfoot elements)</h2>
+<p>
+    The thead element indicates that the enclosed rows contain no data, just 
+    titles. The tbody element indicates that the enclosed rows contain data.
+    The tfoot element contains summary information.
+</p>
+<table style="border: 1px solid black; border-collapse: collapse;">
+<thead>
+    <!-- First row of table, with headers (i.e., using th instead of td) -->
+    <!-- By default, the th element displays its text in bold -->
+    <tr>
+        <th colspan="2" style="text-align: center;">
+            Cast of <em>Pirates of the Carribean: The Curse of the Black Pearl</em>
+        </th>
+    </tr>
+    <!-- Second row of table -->
+    <tr> 
+        <th>Movie Character</th>
+        <th>Actor</th>
+    </tr>
+</thead>
+<tbody>
+    <tr> 
+        <td>Captain Jack Sparrow, first captain of the Black Pearl</td>
+        <td>Johnny Depp</td>
+    </tr>
+    <tr> 
+        <td>Captain Hector Barbossa</td>
+        <td>Geoffrey Rush</td>
+    </tr>
+    <tr>
+        <td>Will Turner (blacksmith)</td>
+        <td>Orlando Bloom</td>
+    </tr>
+    <tr>
+        <td>Elizabeth Swann (Will Turner's love interest)</td>
+        <td>Keira Knightley</td>
+    </tr>
+    <tr>
+        <td>Ragetti (one-eyed pirate on the Black Pearl. His fake eye tends to pop out.)</td>
+        <td>Paul Mackenzie Crook</td>
+    </tr>
+    <tr>
+        <td>Pintel (pirate on the Black Pearl ship, friend of Ragetti)</td>
+        <td>Lee Arenberg</td>
+    </tr>
+</tbody>
+<tfoot>
+    <td colspan="2" style="border: 1px solid black;">
+        Released in 2003. Directed by Gore Verbinski, produced by Jerry Bruckheimer.
+        Screenwriters were Ted Elliot and Terry Rossio.
+    </td>
+</tfoot>
+</table>
+
+<p>
+    Challenge - recreate the Brady Bunch movie introduction picture. 
+    Place an image of each character in a 3x3 table, using img tags.
+</p>
+
+<!-- ========================================================================================= -->
+<h2>A 4x2 table with a red, collapsed border and headers</h2>
+<table style="border: 1px solid red; border-collapse: collapse;">
+    <!-- First row of table, with headers (i.e., using th instead of td) -->
+    <tr>
+        <th>first row, first column</th>
+        <th>first row, second column</th>
+    </tr>
+    <!-- Second row of table -->
+    <tr> 
+        <td>second row, first column</td>
+        <td>second row, second column</td>
+    </tr>
+    <!-- Third row of table -->
+    <tr> 
+        <td>third row, first column</td>
+        <td>third row, second column</td>
+    </tr>
+    <!-- Fourth row of table -->
+    <tr> 
+        <td>fourth row, first column</td>
+        <td>fourth row, second column</td>
+    </tr>
+</table>
+
+<h2>A table with borders around each cell and a caption on top</h2>
+<p>
+    Some of the table cells in this table use the rowspan attribute to get 
+    table cells to span multiple rows. The borders around each cell do not 
+    overlap each other because I did not set the border-spacing to 0.
+</p>
+<table class="borderedCellsTable">
+    <caption>JavaScript Statements Breakdown</caption>
+    <!-- First row of table, with headers (i.e., using th instead of td) -->
+    <tr>
+        <th>Statement Type</th>
+        <th>Statements</th>
+    </tr>
+    <!-- Second row of table (in first column)-->
+    <tr> 
+        <td rowspan="3">Variable Declaration</td>
+        <td>var statement</td>
+    </tr>
+    <tr>
+        <td>let statement</td>
+    </tr>
+    <tr>
+        <td>const statement</td>
+    </tr>
+    <!-- Third row of table (in first column) -->
+    <tr> 
+        <td rowspan="2">Conditional</td>
+        <td>if statement</td>
+    </tr>
+    <tr>
+        <td>switch statement</td>
+    </tr>
+    <!-- Fourth row of table (in first column) -->
+    <tr> 
+        <td rowspan="5">Looping</td>
+        <td>for</td>
+    </tr>
+    <tr>
+        <td>for...in statement</td>
+    </tr>
+    <tr>
+        <td>for...of statement</td>
+    </tr>
+    <tr>
+        <td>while statment</td>
+    </tr>
+    <tr>
+        <td>do-while statement</td>
+    </tr>
+    <!-- Fifth row in table (in first column) -->
+    <tr>
+        <td rowspan="3">disruptive</td>
+        <td>break statement</td>
+    </tr>
+    <tr>
+        <td>return statement</td>
+    </tr>
+    <tr>
+        <td>throw statement</td>
+    </tr>
+    <!-- Sixth row in table (in first column) -->
+    <tr> 
+        <td>Try (Exception-handling)</td>
+        <td>try statement</td>
+    </tr>
+</table>
+
+<h2>A table with borders around each cell and a caption on bottom</h2>
+<p>
+    Some of the table cells in this table use the rowspan attribute to get 
+    table cells to span multiple rows. The borders around each cell do not 
+    overlap each other because I did not set the border-spacing to 0.
+</p>
+<table class="borderedCellsTable">
+    <caption style="caption-side: bottom;">JavaScript Statements Breakdown</caption>
+    <!-- First row of table, with headers (i.e., using th instead of td) -->
+    <tr>
+        <th>Statement Type</th>
+        <th>Statements</th>
+    </tr>
+    <!-- Second row of table (in first column)-->
+    <tr> 
+        <td rowspan="3">Variable Declaration</td>
+        <td>var statement</td>
+    </tr>
+    <tr>
+        <td>let statement</td>
+    </tr>
+    <tr>
+        <td>const statement</td>
+    </tr>
+    <!-- Third row of table (in first column) -->
+    <tr> 
+        <td rowspan="2">Conditional</td>
+        <td>if statement</td>
+    </tr>
+    <tr>
+        <td>switch statement</td>
+    </tr>
+    <!-- Fourth row of table (in first column) -->
+    <tr> 
+        <td rowspan="5">Looping</td>
+        <td>for</td>
+    </tr>
+    <tr>
+        <td>for...in statement</td>
+    </tr>
+    <tr>
+        <td>for...of statement</td>
+    </tr>
+    <tr>
+        <td>while statment</td>
+    </tr>
+    <tr>
+        <td>do-while statement</td>
+    </tr>
+    <!-- Fifth row in table (in first column) -->
+    <tr>
+        <td rowspan="3">disruptive</td>
+        <td>break statement</td>
+    </tr>
+    <tr>
+        <td>return statement</td>
+    </tr>
+    <tr>
+        <td>throw statement</td>
+    </tr>
+    <!-- Sixth row in table (in first column) -->
+    <tr> 
+        <td>Try (Exception-handling)</td>
+        <td>try statement</td>
+    </tr>
+</table>
+
+<h2>A table with borders around each cell</h2>
+<p>
+    In this case, I did set border-spacing to 0 and collapsed the borders.
+</p>
+<table class="borderedRowsTable">
+    <tr>
+        <td>Row 1</td>
+        <td>stuff</td>
+    </tr>
+    <tr> 
+        <td>Row 2</td>
+        <td>stuff</td>
+    </tr>
+    <tr>
+        <td>Row 3</td>
+        <td>stuff</td>
+    </tr>
+    <tr>
+        <td>Row 4</td>
+        <td>stuff</td>
+    </tr>
+</table>
+</body>
+</html>

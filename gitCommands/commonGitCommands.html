@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF8">
+<title>Common git commands</title>
+</head>
+
+<body>
+<h1>Common git commands</h1>
+<h2>Getting help using git</h2>
+<pre>
+git --help
+</pre>
+Example:<br>
+<img src="../images/git_dashdashhelp.png">
+<br>
+<br>
+If you want help on a specific git command, type in the following:
+<pre>
+git help <i>commandName</i>
+</pre>
+This will bring up a webpage on your default browser providing more help on the specified command.<br>
+Example:<br>
+<img src="../images/git_help_add.png">
+<br>
+This is the webpage it will bring up:<br>
+<img src="../images/git_help_add_manualPage.png">
+<br>
+<br>
+<h2>Creating a clone of a branch</h2>
+<pre>
+git clone <i>branchURL</i>
+</pre>
+<br>
+<br>
+<h2>Determining the status of your files</h2>
+<pre>
+git status
+</pre>
+Example:<br>
+<img src="../images/git_status.png">
+<br>
+When using git status after you create a new file, you will get a message indicating the presence of "untracked files":<br>
+<img src="../images/git_status_afterCreatingANewFile.png">
+<br>
+However, after you add the new file to the staging area with the 'git add newFile.html' command, you will get a different status:<br>
+<img src="../images/git_status_afterAddingNewFileToStagingArea.png">
+<br>
+<br>
+<h2>Adding a file to the staging area</h2>
+<pre>
+git add newFile.html
+</pre>
+Example:<br>
+<img src="../images/git_add_newFile.png">
+<br>
+<br>
+Adding all new/modified files to the staging area:
+<pre>
+git add -A
+</pre>
+Example:<br>
+<img src="../images/git_add_dashA.png">
+<br>
+<br>
+<h2>Removing a file from the staging area</h2>
+
+<h2>Creating your own branch of a project</h2>
+<pre>
+git branch <i>branchname</i>
+</pre>
+<br>
+<br>
+<h2>Switching to a different branch</h2>
+<pre>
+git checkout <i>branchtoname</i>
+</pre>
+Example:<br>
+<img src="../images/git_checkout_master.png">
+<br>
+NOTE: Switching branches changes files in your working directory! 
+<br>
+<br>
+<h2>Getting a list of the branches in your local repository</h2>
+<pre>
+git branch
+</pre>
+Example:<br>
+<img src="../images/git_branch.png" alt="screenshot of running 'git branch' command">
+</body>
+</html>
+
+
+
+
+
+

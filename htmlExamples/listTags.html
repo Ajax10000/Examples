@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>List-related tags</title>
+</head>
+
+<body>
+<h1>The List Tags</h1>
+<p>
+    This is a practice file - it will not be turned in nor graded. It is for you to learn from 
+    and experiment with.
+</p>
+<p>
+    HTML allows you to create three types of lists:<br>
+    - the unordered list with the ul and li tags<br>
+    - the ordered list with the ol and li tags<br>
+    - the description list with the dl, dd and dt tags (HTML 4 used to call these definition lists)
+</p>
+<p>
+    The li (list item) tag is used in both the unordered and ordered lists. A description list 
+    consists a sequence of pairs of dt and dd tags. dt introduces a term, the dd provides a 
+    description for the term.
+</p>
+<p>
+    Below you will see some examples of each of these different types of lists. For information on how 
+    to style lists, the webpage <a target="_blank" 
+    href="https://www.w3schools.com/cssref/pr_list-style-type.asp">https://www.w3schools.com/cssref/pr_list-style-type.asp</a>
+    is recommended. Please note that you can have a list within a list, and a list within a list
+    within a list (that is, a list nested two levels deep), and so on. There is no limit.
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="ul">The Unordered List</h2>
+<p>
+    The ul element, together with the li (list item) element, is used to create 
+    unordered lists.
+</p>
+
+<h3>Examples using the ul element</h3>
+Subjects I took as a freshman in college:
+<ul>
+    <li>History I</li>
+    <li>History II</li>
+    <li>English</li>
+    <li>Business Math I</li>
+    <li>Business Math II</Li>
+</ul>
+
+<p>
+    Here is the same list, but styled so as not to display the marker symbol of 
+    the line items. This is done by using the attribute 
+    style="list-style-type: none" on the ul element.
+</p>
+<ul style="list-style-type: none;">
+    <li>History I</li>
+    <li>History II</li>
+    <li>English</li>
+    <li>Business Math I</li>
+    <li>Business Math II</Li>
+</ul>
+
+<p>
+    Here is the same list, but styled to use squares. This is done by using the 
+    attribute style="list-style-type: square" on the ul element.
+</p>
+<ul style="list-style-type: square;">
+    <li>History I</li>
+    <li>History II</li>
+    <li>English</li>
+    <li>Business Math I</li>
+    <li>Business Math II</Li>
+</ul>
+
+<p>
+    Here is the same list, but styled to use circles. This is done by using the 
+    attribute style="list-style-type: circle" on the ul element.
+</p>
+<ul style="list-style-type: circle;">
+    <li>History I</li>
+    <li>History II</li>
+    <li>English</li>
+    <li>Business Math I</li>
+    <li>Business Math II</Li>
+</ul>
+
+<p>
+    The following unordered list has a sublist (which is also an unordered list).
+</p>
+Items to bring on a week-long camping trip, while staying at a cabin:
+<ul>
+    <li>Enough clothes to last for the trip.</li>
+    <li>Soap and shampoo</li>
+    <li>Toothpaste and toothbrush</li>
+    <li>Dishwashing detergent</li>
+    <li>Flashlight</li>
+    <li>Mosquito repellent</li>
+    <li>Camera (if you have a smartphone, you're good)</li>
+    <li>Matches</li>
+    <li>Trashbags (leave nothing behind but footprints)</li>
+    <li>Bottled water</li>
+    <li>
+        Fruit and canned foods. I recommend the following:
+        <ul>
+            <li>apples</li>
+            <li>oranges</li>
+            <li>beans</li>
+            <li>corn</li>
+            <li>asparagus</li>
+            <li>peas</li>
+            <li>ramen</li>
+        </ul>
+    </li>
+    <li>Paper plates, forks, spoons, cups, can opener</li>
+    <li>At least one pot and one pan</li>
+    <li>At least one spatula</li>
+</ul>
+
+<p>
+    Challenge - create a list of the 7 wonders of the ancient world.
+</p>
+<p>
+    Challenge - create a list of the 7 sages of ancient Greece.
+</p>
+
+<h3>Webpages on unordered lists</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul</a> 
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_ul.asp">https://www.w3schools.com/tags/tag_ul.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use unordered lists</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.alibris.com/">https://www.alibris.com/</a> 
+        (the unordered lists are visible when you move the mouse over the hyperlinks appearing at the top,
+        in particular the hyperlinks labeled Textbooks, Books, Music, Movies, Bargains)
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.mygenfcu.org/december-2019-gfcucares-events/">https://www.mygenfcu.org/december-2019-gfcucares-events/</a> 
+        (the words listed under the Product, Company, Resources, and Locations are unordered list. 
+        They are styled so as not to display the list item symbols.)
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="ol">The Ordered List</h2>
+<p>
+    The ol element, together with the li (list item) element, is used to create 
+    ordered lists.
+</p>
+
+<h3>Examples using the ol element</h3>
+My weekend chores list:
+<ol>
+    <li>Take wife to grocery store</li>
+    <li>Wash the dog</li>
+    <li>Mow the lawn</li>
+    <li>Pay the car insurance bill online</li>
+</ol>
+
+In this next example, I use the CSS property list-style-type and use the 
+lower-roman value; that is, I used style="list-style-type: lower-roman;" 
+attribute on the ol element.<br>
+Steps to getting married:
+<ol style="list-style-type: lower-roman;">
+    <li>Buy an engagement ring (optional)</li>
+    <li>Ask the woman to marry you. The rest of the list assumes she said yes.</li>
+    <li>Buy a wedding ring</li>
+    <li>Go to the courthouse with fiance, and get a marriage license</li>
+    <li>Use home or rent an event center for the wedding</li>
+    <li>Hire a priest, rabbi, or preacher to perform at wedding</li>
+    <li>Find best man, and best woman.</li>
+    <li>Have wedding ceremony, give bride the wedding ring.</li>
+</ol>
+
+<h3>Webpages on ordered lists</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol</a> 
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_ol.asp">https://www.w3schools.com/tags/tag_ol.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use ordered lists</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.applytexas.org/adappc/html/preview20/frs_1.html">https://www.applytexas.org/adappc/html/preview20/frs_1.html</a>
+    </li>
+    <li>
+        <a target="_blank"
+        href="https://www.fortrantutorial.com/basics/">https://www.fortrantutorial.com/basics/</a> 
+        (under "There are a number of general points here") and also under ("Let's break the program
+        down, line by line"")
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://en.wikipedia.org/wiki/Numerical_analysis">https://en.wikipedia.org/wiki/Numerical_analysis</a> 
+        (the list of citations just below the References section is an ordered list)
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="dl">The Description List</h2>
+<p>
+    The dl (description list), dt, and dd elements are used to create description 
+    lists.
+</p>
+
+<h3>Examples using the dl element</h3>
+<dl>
+    <dt>Coffee</dt>
+    <dd>
+        A bitter beverage with substantial amount of sweetner added, which I drink every morning, 
+        wakes me up.
+    </dd>
+    <dt>Beer</dt>
+    <dd>
+        A beverage my wife lets me drink only on weekends.
+    </dd>
+    <dt>Tequila Sunrise</dt>
+    <dd>
+        A intoxicating version of liquid courage I could drink when I was single. 
+        Drank often before asking a woman to dance.
+    </dd>
+</dl>
+
+<h3>Webpages on description lists</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl</a> 
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_dl.asp">https://www.w3schools.com/tags/tag_dl.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use description lists</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.weibo.com/us">https://www.weibo.com/us</a>
+    </li>
+</ul>
+</body>
+</html>

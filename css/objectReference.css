@@ -1,0 +1,48 @@
+body {
+    background-image: url("../images/p74.jpg");
+}
+header {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header h1 {
+    font-size: 24px;
+    text-align: center;
+}
+main {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+h2 {
+    background-color: blue;
+    color: white;
+}
+
+.propertiesSecn {
+    
+}
+.methodsSecn {
+    
+}
+
+.property {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: url("../images/paper-04.jpg");
+}
+.method {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    background-image: url("../images/paper-04.jpg")
+}

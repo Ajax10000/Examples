@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic Elements</title>
+</head>
+
+<body>
+<h1>The Semantic Elements</h1>
+<p>
+    The semantic elements in HTML5 are the elements that have meaning in and of themselves.
+    For example, the div element is not a semantic element. It is a division tag, so its 
+    purpose really is just to display a block of content in a rectangular portion of the
+    screen. The content within the division element could be anything.
+</p>
+<p>
+    However, semantic elements are meant to contain specific types of information. For 
+    example, the nav element is meant to contain navigation-related elements - that is, 
+    hyperlinks that will help the user navigate the website.
+</p>
+<p>
+    The semantic elements in HTML5 are listed below:
+</p>
+<ul>
+    <li>article</li>
+    <li>aside</li>
+    <li>details</li>
+    <li>figcaption</li>
+    <li>figure</li>
+    <li>footer</li>
+    <li>header</li>
+    <li>main</li>
+    <li>mark</li>
+    <li>nav</li>
+    <li>section</li>
+    <li>summary</li>
+    <li>time</li>
+</ul>
+<p>
+    The header, footer, main, and aside are used similarly. They are used to create 
+    the "structure" of a webpage. The header goes at the top, the footer goes at the 
+    bottom. In between the header and footer goes the main, and beside the main goes 
+    the aside (assuming an aside is used). You can treat these elements like div 
+    elements; that is, you can style them like you would a div element.
+</p>
+<p>
+    The nav element is used to contain anchor tags that are used for navigation.
+    Not all hyperlinks are used for navigation purposes. For example, some anchor 
+    elements use the mailto: protocol to indicate that the hyperlink is an e-mail 
+    address, so that clicking on it will probably bring up the default e-mail 
+    application. Some anchor elements use the tel: protocol, indicating that 
+    the hyperlink is a phone number. Clicking on this hyperlink will bring up 
+    a phone dialer app (in particular on smartphones) to dial the phone number.
+</p>
+<p>
+    The details and summary elements are used together. The details element contains 
+    the summary element, and under the summary element appears more text (or images). 
+    The summary is used to give the details block a summary, caption, or title. When
+    the summary is clicked, the rest of the details block is alternatively displayed
+    and hidden.
+</p>
+<p>
+    The figure and figcaption elements are typically used together. You create a 
+    figure element. Inside the figure element you use an img element. Above or below
+    the img element you use a figcaption element to give the figure a caption.
+</p>
+<p>
+    The mark and time have somewhat similar purposes. Previously, many webpage 
+    developers used a span element to do what the mark and time elements now do.
+    The time element is used to contain a time value (for events like a theatre showing 
+    time, or any scheduled time like class time, doctor's appointment time, etc.).
+    It is not where the user is asked to enter a time, it is where the webpage 
+    developer is telling anyone reading the webpage (anyone including programs that 
+    read the webpage) that the contents of the time element contain a time value.
+</p>
+<p>
+
+</p>
+
+<h2>Webpages that discuss the semantic elements</h2>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html5-semantics/?ref=lbp">https://www.geeksforgeeks.org/html5-semantics/?ref=lbp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.wired.com/2010/02/building_web_pages_with_html_5/">https://www.wired.com/2010/02/building_web_pages_with_html_5/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.bitdegree.org/learn/html5-semantic-tags">https://www.bitdegree.org/learn/html5-semantic-tags</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>header</h2>
+<p>
+    
+</p>
+<h3>Examples using the header element</h3>
+<p>
+    <a target="_blank" 
+    href="semanticExample01.html">Webpage with a header and no asides</a><br>
+    <a target="_blank" 
+    href="semanticExample02.html">Webpage with a header and one aside, floated left</a><br>
+    <a target="_blank" 
+    href="semanticExample03.html">Webpage with a header and one aside, floated right</a><br>
+    <a target="_blank" 
+    href="semanticExample04.html">Webpage with a header and two asides, one floated left, the other floated right</a>
+</p>
+
+<h3>Webpages on the header element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_header.asp">https://www.w3schools.com/tags/tag_header.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html-5-header-tag/?ref=lbp">https://www.geeksforgeeks.org/html-5-header-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the header element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the header element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.marines.com/">https://www.marines.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://new.trinity.edu">https://new.trinity.edu</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.nysun.com/">https://www.nysun.com/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>footer</h2>
+<p>
+    
+</p>
+
+<h3>Examples using the footer element</h3>
+<p>
+    <a target="_blank" 
+    href="semanticExampleA.html">Webpage with a footer and no asides</a><br>
+    <a target="_blank" 
+    href="semanticExampleB.html">Webpage with a footer and one aside, floated left</a><br>
+    <a target="_blank" 
+    href="semanticExampleC.html">Webpage with a footer and one aside, floated right</a><br>
+    <a target="_blank" 
+    href="semanticExampleD.html">Webpage with a footer and two asides, one floated left, the other floated right</a>
+</p>
+<h3>Webpages on the footer element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_footer.asp">https://www.w3schools.com/tags/tag_footer.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html5-footer-tag/?ref=lbp">https://www.geeksforgeeks.org/html5-footer-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the footer element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the footer element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.marines.com/">https://www.marines.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://new.trinity.edu/">https://new.trinity.edu/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.nysun.com/">https://www.nysun.com/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>main</h2>
+<p>
+    
+</p>
+
+<h3>Examples using the main element</h3>
+<p>
+    <a target="_blank" 
+    href="semanticExample01.html">Webpage with a main and no asides</a><br>
+    <a target="_blank" 
+    href="semanticExample02.html">Webpage with a main and one aside, floated left</a><br>
+    <a target="_blank" 
+    href="semanticExample03.html">Webpage with a main and one aside, floated right</a><br>
+    <a target="_blank" 
+    href="semanticExample04.html">Webpage with a main and two asides, one floated left, the other floated right</a>
+</p>
+
+<h3>Webpages on the main element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_main.asp">https://www.w3schools.com/tags/tag_main.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the main element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the main element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://thechemco.com/chemical/adipic-acid/">https://thechemco.com/chemical/adipic-acid/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.mygenfcu.org/">https://www.mygenfcu.org/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://raisedonors.com/stpjhome/general-donation-page">https://raisedonors.com/stpjhome/general-donation-page</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.ssfcu.org/careers">https://www.ssfcu.org/careers</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>aside</h2>
+<p>
+    The aside element is used to create text that is related to the main content, but 
+    is placed either to the left or right (hence aside) the main content.
+</p>
+
+<h3>Examples using the aside element</h3>
+<p>
+    <a target="_blank" 
+    href="semanticExample02.html">Webpage with one aside, floated left</a><br>
+    <a target="_blank" 
+    href="semanticExample03.html">Webpage with one aside, floated right</a><br>
+    <a target="_blank" 
+    href="semanticExample04.html">Webpage with two asides, one floated left, the other floated right</a>
+</p>
+
+<h3>Webpages on the aside element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_aside.asp">https://www.w3schools.com/tags/tag_aside.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html5-aside-tag/?ref=lbp">https://www.geeksforgeeks.org/html5-aside-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the aside element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the aside element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://unitedtissue.org/whole-body-donation/pledge-yourself/">https://unitedtissue.org/whole-body-donation/pledge-yourself/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html">https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.discovermagazine.com/">https://www.discovermagazine.com/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>nav</h2>
+<p>
+    
+</p>
+<h3>Examples using the nav element</h3>
+<p>
+    No examples provided yet.
+</p>
+
+<h3>Webpages on the nav element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_nav.asp">https://www.w3schools.com/tags/tag_nav.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the nav element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the nav element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="new.trinity.edu">new.trinity.edu</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.nysun.com/">https://www.nysun.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://unsplash.com/s/photos/robots">https://unsplash.com/s/photos/robots</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>article</h2>
+<p>
+    Article elements are used to enclose content that stands alone and could be syndicated 
+    (i.e., sold as content to other webpages). This could be, for example, a newspaper article,
+    a science article, a math article, a blog article, a forum post, etc.
+</p>
+
+<h3>Examples using the article element</h3>
+<article>
+    <h4>Group Theory for the Common Man</h4>
+    <p>
+        Group theory is a subject area of math which first appeared around the time of the 
+        French Revolution. In fact, its birth was given by a young man named Evariste Galois,
+        who took part in the French Revolution. Unfortunately, Evariste died very young 
+        as the result of a duel.
+    </p>
+    <p>
+        Group theory is all about groups and their properties. A group is defined as a set 
+        G of elements, and an associative operation *:GxG -> G which you can consider to be 
+        "multiplication" or "addition" of the elements. This set G must contain an element 
+        which behaves like a zero element. That is, each group G must contain an element g 
+        such that for every element g' in G, we have g' + g = g', and g + g' = g'.
+        The operation must be associative means that for all elements g, g', and g'' of G 
+        we have (g * g')*g'' = g*(g' * g'')
+    </p>
+    <p>
+        You are already familiar with some groups. Consider the set Z of integers, with the 
+        operation of addition. That is a group. The operation of addition is associative,
+        because for any integers a, b and c we have (a + b) + c = a + (b + c). Also, it
+        contains a zero element, the number 0. This zero element satisfies the property
+        0 + g = g for all g in Z and g + 0 = g for all g in Z.
+    </p>
+</article>
+
+<h3>Webpages on the article element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_article.asp">https://www.w3schools.com/tags/tag_article.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the article element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the article element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.mygenfcu.org/category/gfcu-cares/">https://www.mygenfcu.org/category/gfcu-cares/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.esc20.net/">https://www.esc20.net/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html">https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>section</h2>
+<p>
+    
+</p>
+
+<h3>Examples using the section element</h3>
+<section>
+    <h3>Acids, Bases and Salts</h3>
+    <p>
+        In this section we will discuss acids, bases and salts. We are all familiar with 
+        the sour taste of lemons and limes. This is due to the citric acid within them.
+        Acids typically have a sour taste, but <strong>I must warn you never to taste</strong> 
+        chemicals in our laboratory, as some are toxic.
+    </p>
+</section>
+
+<h3>Webpages on the section element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_section.asp">https://www.w3schools.com/tags/tag_section.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the section element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the section element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories.html">https://www.goarmy.com/careers-and-jobs/browse-career-and-job-categories.html</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.marines.com/">https://www.marines.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.firstmarkcu.org/contact-us/">https://www.firstmarkcu.org/contact-us/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2>details</h2>
+<p>
+    The details element is used to create text that is visible or hidden from the user's 
+    view. The user can hide or display it by clicking on the summary element within the 
+    details view.
+</p>
+
+<h3>Examples using the details element</h3>
+<p>
+    No examples provided yet.
+</p>
+<h3>Webpages on the details element</h3>
+<ul>
+    <li>
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://www.w3schools.com/tags/tag_details.asp">https://www.w3schools.com/tags/tag_details.asp</a>
+    </li>
+    <li>
+        <a target="_blank" href="https://www.geeksforgeeks.org/html5-details-tag/?ref=lbp">https://www.geeksforgeeks.org/html5-details-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the details element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the details element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://github.com">https://github.com</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="summary">summary</h2>
+<p>
+    The summary element, when used, must be the first child element of a detail element.
+    It provides a summary for the content in the details element. Clicking on the summary 
+    element will alternately hide/display the contents of the corresponding detail element.
+</p>
+<h3>Examples using the summary element</h3>
+<details>
+    <summary style="width: 20em;">What to bring on your camping trip</summary>
+    <ul>
+        <li>tent</li>
+        <li>sleeping bag</li>
+        <li>insect repellent</li>
+        <li>bear repellent</li>
+        <li>compass</li>
+        <li>binoculars</li>
+    </ul>
+</details>
+<details>
+    <summary style="width: 20em;">List of do NOTS for husbands (for a happy marriage)</summary>
+    <ul>
+        <li>do NOT tell your wife she has gained weight</li>
+        <li>do NOT record over your wedding video</li>
+        <li>do NOT go on fishing, camping, or business trips on her birthday</li>
+        <li>do NOT forget her birthday</li>
+    </ul>
+</details>
+
+<h3>Webpages on the summary element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_summary.asp">https://www.w3schools.com/tags/tag_summary.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html-5-summary-tag/?ref=lbp">https://www.geeksforgeeks.org/html-5-summary-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the summary element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the summary element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://github.com">https://github.com</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="figure">figure</h2>
+<p>
+    
+</p>
+<h3>Examples using the figure element</h3>
+<figure>
+    <img src="../images/HotStuff.jfif" alt="Small baby devil in diapers standing with a pitchfork">
+    <figcaption>HotStuff, friend of Casper the Friendly Ghost and Wendy the Good Little Witch</figcaption>
+</figure>
+
+<h3>Webpages on the figure element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_figure.asp">https://www.w3schools.com/tags/tag_figure.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html5-figure-tag/?ref=lbp">https://www.geeksforgeeks.org/html5-figure-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the figure element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the figure element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://unsplash.com/s/photos/robots">https://unsplash.com/s/photos/robots</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="http://www.mit.edu/building-a-better-world/">http://www.mit.edu/building-a-better-world/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.marvel.com/">https://www.marvel.com/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html">https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.japantimes.co.jp">https://www.japantimes.co.jp</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="figcaption">figcaption</h2>
+<p>
+    
+</p>
+
+<h3>Examples using the figcaption element</h3>
+<p>
+    No examples created yet.
+</p>
+
+<h3>Webpages on the figcaption element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_figcaption.asp">https://www.w3schools.com/tags/tag_figcaption.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html5-figcaption-tag/?ref=lbp">https://www.geeksforgeeks.org/html5-figcaption-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the figcaption element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the figcaption element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://unsplash.com/s/photos/robots">https://unsplash.com/s/photos/robots</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="http://www.mit.edu/building-a-better-world/">http://www.mit.edu/building-a-better-world/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html">https://www.livescience.com/13694-devastating-infectious-diseases-smallpox-plague.html</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.stevespanglerscience.com/lab/experiment-library/">https://www.stevespanglerscience.com/lab/experiment-library/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="mark">mark</h2>
+<p>
+    The mark element is used to indicate marked (i.e., highlighted) text. It is often displayed 
+    with a different background color than the rest of the surrounding text.
+</p>
+
+<h3>Examples using the mark element</h3>
+<p>
+    In our Bachelor of Science Math program you will have to take the following required 
+    courses: Trigonometry, Analytic Geometry, Calculus I, Calculus II, Calculus III, 
+    <mark style="background-color: yellow;">Advanced Calculus</mark>, and Discrete 
+    Mathematics.
+</p>
+
+<h3>Webpages on the mark element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_mark.asp">https://www.w3schools.com/tags/tag_mark.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.geeksforgeeks.org/html5-mark-tag/?ref=lbp">https://www.geeksforgeeks.org/html5-mark-tag/?ref=lbp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the mark element</h3>
+<ul>
+    <li>
+        <a target="_blank" href=""></a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="time">time</h2>
+<p>
+    The time element is used to enclose time values that might appear on your webpage.
+    It is not used to ask the user to enter a time. The time element can also include 
+    dates and time durations.
+</p>
+<h3>Examples using the time element</h3>
+<p>
+    My dad never goes to sleep beyond <time>11pm</time>. He likes to watch his 
+    Ironside re-runs and wrestling shows before hitting the sack.
+</p>
+<p>
+    The doctor's office is open from <time>8:00 am</time> to <time>4:00 pm</time>, 
+    Monday through Friday.
+</p>
+
+<h3>Webpages on the time element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_time.asp">https://www.w3schools.com/tags/tag_time.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the time element</h3>
+<p>
+    Note that webpages change over time, so by the time you view this webpage, it may no longer 
+    use the time element.
+</p>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.esc20.net/">https://www.esc20.net/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.smithsonianmag.com/">https://www.smithsonianmag.com/</a> 
+        This site uses time elements to enclose publication dates, not times.
+    </li>
+</ul>
+</body>
+</html>

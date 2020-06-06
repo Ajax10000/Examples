@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The Node Object</title>
+    <link rel="stylesheet" href="../css/objectReference.css" >
+    <style type="text/css">
+        .obsolete {
+            color: red;
+        }
+        table {
+            border-spacing: 0;
+            border: collapse;
+        }
+        table th, table td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>The Node Object</h1>
+    <p>
+        The Node object represents a generic node in the DOM tree. More specific objects 
+        represent specific types of elements in the DOM tree. Many DOM objects inherit from 
+        the Node object, including the Document and Element objects.
+    </p>
+</header>
+
+<main>
+<!-- ######################################################################################### -->
+<section class="propertiesSecn">
+    <h2>Properties</h2>
+
+    <div class="property">
+    <h3 id="attributesProperty">attributes</h3>
+    <p>
+        A list of attributes of the current node, if the current node has any. 
+    </p>
+
+    <h4>Webpages on the Node.attributes property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="childNodesProperty">childNodes</h3>
+    <p>
+        A (live) <a href="nodeListObject.html">NodeList</a> object containing the current node's 
+        children.
+    </p>
+
+    <h4>Webpages on the Node.childNodes property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://parrot-tutorial.com/jsref/elem_childnodes.html">https://parrot-tutorial.com/jsref/elem_childnodes.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="firstChildProperty">firstChild</h3>
+    <p>
+        The current node's first child, or null if the current node has no children.
+    </p>
+
+    <h4>Webpages on the Node.firstChild property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://parrot-tutorial.com/jsref/elem_firstchild.html">https://parrot-tutorial.com/jsref/elem_firstchild.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="lastChildProperty">lastChild</h3>
+    <p>
+        The current node's last Child, or null if the current node has no children.
+    </p>
+
+    <h4>Webpages on the Node.lastChild property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://parrot-tutorial.com/jsref/elem_lastchild.html">https://parrot-tutorial.com/jsref/elem_lastchild.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="nextSiblingProperty">nextSibling</h3>
+    <p>
+        This is the next sibling Node of the current node, if the current node has any.
+        If it has no next sibling, then nextSibling is null.
+    </p>
+
+    <h4>Webpages on the Node.nextSibling property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://parrot-tutorial.com/jsref/elem_nextsibling.html">https://parrot-tutorial.com/jsref/elem_nextsibling.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="nodeTypeProperty">nodeType</h3>
+    <p>
+        The nodeType property is a number, an integer actually, which indicates what type of 
+        object the node really is. See the table below.
+    </p>
+    <table>
+    <tr>
+        <th>Integer Value</th>
+        <th>Corresponding Object Type</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td><a href="elementObject.html">Element</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Attr</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Text</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>CDATASection</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>EntityReference <span class="obsolete">(now obsolete)</span></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Entity <span class="obsolete">(now obsolete)</span></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>ProcessingInstruction</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Comment</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><a href="documentObject.html">Document</a></td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>DocumentType</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>DocumentFragment</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>Notation <span class="obsolete">(now obsolete)</span></td>
+    </tr>
+    </table>
+
+    <h4>Webpages on the Node.nodeType property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="parentNodeProperty">parentNode</h3>
+    <p>
+        The parent node of the current node, if the current node has any. If the current 
+        node has no parent node, then parentNode is null.
+    </p>
+
+    <h4>Webpages on the Node.parentNode property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://parrot-tutorial.com/jsref/elem_parentnode.html">https://parrot-tutorial.com/jsref/elem_parentnode.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="previousSiblingProperty">previousSibling</h3>
+    <p>
+        This is the previous sibling node of the current node, if the current node has any.
+        If the current node has no previous sibling, then previousSibling is null.
+    </p>
+
+    <h4>Webpages on the Node.previousSibling property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://parrot-tutorial.com/jsref/elem_previoussibling.html">https://parrot-tutorial.com/jsref/elem_previoussibling.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="property">
+    <h3 id="textContentProperty">textContent</h3>
+    <p>
+        The text content of a tag is the text that appears between the starting tag and the closing 
+        tag. If the current node has text content, this property holds it. Not all elements can have 
+        text context. Some elements that can not have text content are "hr", "br", "img", "input", 
+        and "meta". 
+    </p>
+
+    <h4>Webpages on the Node.textContent property</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+    </ul>
+    </div>
+</section>
+
+<!-- ######################################################################################### -->
+<section class="methodsSecn">
+    <h2>Methods</h2>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="appendChildMethod">appendChild()</h3>
+    <p>
+        Arguments: 1, a Node object to append.
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>node</em>.appendChild(<em>childNode</em>);
+    </p>
+    <p>
+        The return value of the appendChild method is the childNode that was appended.
+    </p>
+    <p>
+        The appendChild method is used to append a node as the last child element of a given 
+        node. An example is shown below.
+    </p>
+    <pre>
+        var webpageBody = document.body;
+
+        // Create a new Element
+        var myNewFooterNode = document.createElement("footer");
+
+        // Give it a background color
+        myNewFooterNode.style.backgroundColor = #eee;
+
+        // Add it as the last child of the body element
+        webpageBody.appendChild(myNewFooterNode);
+    </pre>
+    <p>
+        Like appendChild, the insertBefore method can also be used to insert an 
+        element into a webpage.
+    </p>
+
+    <h4>Webpages on the Node.appendChild() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_node_appendchild.asp">https://www.w3schools.com/jsref/met_node_appendchild.asp</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="hasChildNodesMethod">hasChildNodes()</h3>
+    <p>
+        Arguments: 0
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>node</em>.hasChildNodes();
+    </p>
+    <p>
+        The hasChildNodes method returns <em>true</em> if the given element has any child nodes, and 
+        returns <em>false</em> otherwise. An example is shown below.
+    </p>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;title&gt;Outerspace Aliens&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h1&gt;All I know about outerspace aliens&lt;/h1&gt;
+        &lt;-- I don't know anything about outerspace aliens --&gt;
+        &lt;div id="content"&gt;
+        &lt;/div&gt;
+        &lt;/body&gt;
+    </pre>
+    <p>
+        Given the webpage above, the following hasChildNodes method would return false.
+    </p>
+    <pre>
+        var divElement = document.getElementById("content");
+        if (divELement.hasChildNodes()) {
+            console.log("It appears I know something about outerspace aliens");
+        } else {
+            console.log("Apparently I know nothing about outerspace aliens");
+        }
+    </pre>
+
+    <h4>Webpages on the Node.hasChildNodes() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes">https://developer.mozilla.org/en-US/docs/Web/API/Node/hasChildNodes</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_node_haschildnodes.asp">https://www.w3schools.com/jsref/met_node_haschildnodes.asp</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="insertBeforeMethod">insertBefore()</h3>
+    <p>
+        Arguments: 2
+        The first argument is the new child node to insert.
+        The second argument is the node you want to insert your new node before.
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>node</em>.insertBefore(<em>newChild</em>, <em>beforeChild</em>);
+    </p>
+    <p>
+        Like insertBefore, the appendChild method can also be used to insert an 
+        element into a webpage.
+    </p>
+
+    <h4>Webpages on the Node.insertBefore() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore">https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_node_insertbefore.asp">https://www.w3schools.com/jsref/met_node_insertbefore.asp</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="removeChildMethod">removeChild()</h3>
+    <p>
+        Arguments: 1, the child node to remove from the parent node
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>node</em>.removeChild(<em>childNodeToRemove</em>);
+    </p>
+    <p>
+        Given a child node of a parent node, this method will remove the child node from the 
+        parent node.
+    </p>
+
+    <h4>Webpages on the Node.removeChild() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild">https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_node_removechild.asp">https://www.w3schools.com/jsref/met_node_removechild.asp</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.javascripttutorial.net/javascript-dom/javascript-removechild/">https://www.javascripttutorial.net/javascript-dom/javascript-removechild/</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="replaceChildMethod">replaceChild()</h3>
+    <p>
+        Arguments: 2<br>
+        The first argument is the child node to replace.
+        The second argument is the new node that will be the replacement.
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>node</em>.replaceChild(<em>newChild</em>, <em>childToBeReplaced</em>);
+    </p>
+
+    <h4>Webpages on the Node.replaceChild() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild">https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_node_replacechild.asp">https://www.w3schools.com/jsref/met_node_replacechild.asp</a>
+        </li>
+    </ul>
+    </div>
+</section>
+</main>
+</body>
+</html>

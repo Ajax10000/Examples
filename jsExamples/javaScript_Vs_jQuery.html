@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript vs jQuery</title>
+
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            width: 33%;
+            border: 1px solid black;
+        }
+        code {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>JavaScript vs jQuery</h1>
+<p>
+    First off, let me start by saying that jQuery is a JavaScript library. This means it is 
+    JavaScript code, packaged in a manner that anyone can include it in their html page 
+    to use. jQuery is not a programming language like JavaScript is.
+</p>
+<p>
+    The purpose of jQuery is to make JavaScript easier to use. With that in mind, the following 
+    table will show you how you can do something in JavaScript, and then show you how to do 
+    the same thing using jQuery.
+</p>
+
+<table>
+<tr>
+    <th>Task</th>
+    <th>JavaScript</th>
+    <th>jQuery</th>
+</tr>
+<tr>
+    <td>
+        Get a reference to an existing HTML element by using an id
+    </td>
+    <td>
+        <code>
+            var myElement = document.getElementById("myIdValue");
+        </code><br>
+        or<br>
+        <code>
+            var myElement = document.querySelector("#myIdValue");
+        </code>
+        <p>
+            For more on document.getElementById(), see <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById</a>.
+        </p>
+        <p>
+            For more on <em>element</em>.querySelector(), see <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName">https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName</a>.
+        </p>
+    </td>
+    <td>
+        <code>var myElement = $("#myIdValue");</code>
+        <p>
+            See <a target="_blank" 
+            href="https://www.w3schools.com/jquery/jquery_selectors.asp">https://www.w3schools.com/jquery/jquery_selectors.asp</a>.
+            See also 05-Third-Party-APIs, activity 04-jQueryDrinkList.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Get a reference to an existing HTML element by using a class
+    </td>
+    <td>
+        <code>
+            var myElements = document.getElementsByClassName("myClassName");
+        </code><br>
+        or<br>
+        <code>
+            var myElement = document.querySelector(".myClassName");
+        </code>
+        <p>
+            Note that document.getElementsByClassName() returns an object of type HTMLCollection.
+            You can access the elements of HTMLCollection like you would an array.
+            See <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName</a>
+        </p>
+        <p>
+            Unlike document.getElementsByClassName(), <em>element</em>.querySelector() returns one Element, 
+            the first element it finds with the given class. 
+            See <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector</a>. 
+            See also 04-Web-APIs, activities 
+            04-Ins_Setting-Attributes and 05-Stu_Setting-Attributes.
+        </p>
+    </td>
+    <td>
+        <code>
+            var myElement = $(".myClassName");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://www.w3schools.com/jquery/jquery_selectors.asp">https://www.w3schools.com/jquery/jquery_selectors.asp</a>.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>Create an element</td>
+    <td>
+        <code>
+            var myNewLiElem = document.createElement("li");
+        </code>
+        <p>
+            For more on <em>element</em>.createElement(), see <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement</a>.
+            See also 04-Web-APIs, activities 06-Ins_Create-Append and 07-Stu_LookMaNoHTML
+        </p>
+    </td>
+    <td>
+        <code>
+            var myNewLiElem = $("&lt;li&gt;");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/jquery/#creating-new-elements">https://api.jquery.com/jquery/#creating-new-elements</a>.
+            See also 05-Third-Party-APIs, 11-FridgeGame
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Get the attribute of an element
+    </td>
+    <td>
+        <code>
+            var myImgElement = document.getElementById("hotStuff");<br>
+            var imgSrcAttr = myImgElement.getAttribute("src);
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute">https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute</a>.
+        </p>
+    </td>
+    <td>
+        <code>
+            var myImgElement = $("#hotStuff");<br>
+            var imgSrcAttr = myImgElement.attr("src");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/attr/">https://api.jquery.com/attr/</a>.
+            See also 05-Third-Party-APIs, activities 03-jQueryGenerators and 11-FridgeGame.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Set the attribute of an element
+    </td>
+    <td>
+        <code>
+            var myImgElement = document.getElementById("hotStuff");<br>
+            myImgElement.setAttribute("src", "images/HotStuff.jpg");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute">https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute</a>.
+            See also 04-Web-APIs, activities 04-Ins_Setting-Attributes, 05-Stu-Setting-Attributes, 
+            and 07-Stu_LookMaNoHTML
+        </p>
+    </td>
+    <td>
+        <code>
+            var myImgElement = $("#hotStuff");<br>
+            myImgElement.attr("src", "images/HotStuff.jpg");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/attr/">https://api.jquery.com/attr/</a>.
+            See also 05-Third-Party-APIs, activities 03-jQueryGenerators and 11-FridgeGame.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Removing the attribute of an element
+    </td>
+    <td>
+        <code>
+            var myImgElement = document.getElementById("hotStuff");<br>
+            myImgElement.removeAttribute("src");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_element_removeattribute.asp">https://www.w3schools.com/jsref/met_element_removeattribute.asp</a>.
+        </p>
+    </td>
+    <td>
+        <code>
+            var myImgElement = $("#hotStuff");<br>
+            myImgElement.removeAttr("src");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/removeAttr/#removeAttr1">https://api.jquery.com/removeAttr/#removeAttr1</a>.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Adding a CSS class to an element
+    </td>
+    <td>
+        <code>
+            var myDivElem = document.createElement("div");<br>
+            myDivElem.classList.add("myNewClass")
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">https://developer.mozilla.org/en-US/docs/Web/API/Element/classList</a>.
+        </p>
+    </td>
+    <td>
+        <code>
+            var myDivElem = $("&lt;div&gt;");<br>
+            myDivElem.addClass("myNewClass");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://www.w3schools.com/jquery/html_addclass.asp">https://www.w3schools.com/jquery/html_addclass.asp</a>
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Set the text of an element
+    </td>
+    <td>
+        <code>
+            var myParagraphElement = document.createElement("p");<br>
+            myParagraphElement.textContent = "This is the content of my paragraph."
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://www.w3schools.com/jsref/prop_node_textcontent.asp">https://www.w3schools.com/jsref/prop_node_textcontent.asp</a>.
+        </p>
+    </td>
+    <td>
+        <code>
+            var myParagraphElement = $("&lt;p&gt;");<br>
+            myParagraphElement.text("This is the content of my paragraph.");
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/text/">https://api.jquery.com/text/</a>.
+            See also 05-Third-Party-APIs, activity 03-jQueryGenerators and 11-FridgeGame.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Append a child element to a parent element (as the last child of the parent)
+    </td>
+    <td>
+        <code>
+            var myDivElement = document.getElementById("myDivId");<br>
+            myDivElement.appendChild(myParagraphElement);
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild</a>.
+            See 04-Web-APIs, activities 25-Stu_Render-Todos, 27-Stu_Complete-Todos, and 
+            28-Stu-Local-Storage-Todos.
+            Also see 05-Third-Party-APIs, activity 01-DOM_Manipulation.
+        </p>
+    </td>
+    <td>
+        <code>
+            var myDivElement = $("#myDivId");<br>
+            myDivElement.append(myParagraphElement);
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/append/">https://api.jquery.com/append/</a>.
+            See also 05-Third-Party-APIs, activities activity 02-JSDrinkList, 03-jQueryGenerators.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Get the value of a form field (input, select, or textarea input field).
+    </td>
+    <td>
+        <code>
+            var userNameField = document.getElementById("userName");<br>
+            var userName = userNameField.value;
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://www.w3schools.com/jsref/prop_text_value.asp">https://www.w3schools.com/jsref/prop_text_value.asp</a>.
+        </p>
+    </td>
+    <td>
+        <code>
+            var userNameField = $("#userName");<br>
+            var userName = userNameField.val();
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/val/">https://api.jquery.com/val/</a>.
+        </p>
+    </td>
+</tr>
+<tr>
+    <td>
+        To delete all children of a given parent node.
+    </td>
+    <td>
+        <code>
+            var mainDiv = document.getElementById("mainDiv");<br>
+            while(mainDiv.firstChild) {<br>
+                mainDiv.removeChild(mainDiv.firstChild);<br>
+            }
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Node">https://developer.mozilla.org/en-US/docs/Web/API/Node</a>.
+        </p>
+    </td>
+    <td>
+        <code>
+            var mainDiv = $("#mainDiv");<br>
+            mainDiv.empty();
+        </code>
+        <p>
+            See <a target="_blank" 
+            href="https://api.jquery.com/empty/">https://api.jquery.com/empty/</a>.
+        </p>
+    </td>
+</tr>
+</table>
+</body>
+</html>

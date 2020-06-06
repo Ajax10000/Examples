@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Allowable head tags</title>
+</head>
+
+<body>
+<h1>Allowable head tags</h1>
+<p>
+    This is a practice file - it will not be turned in nor graded. It is for you to learn from 
+    and experiment with.
+</p>
+<p>
+    What tags can I use in the head tag? Compared to those you can use in the body tag, there 
+    are very few tags you can use in the head tag. Here is a short list:<br>
+    <a href="#base">base</a> - to set a base URL from which other relative URLs will start from<br>
+    <a href="#link">link</a> - to pull in external CSS files containing CSS stylesheets for your web page<br>
+    <a href="#meta">meta</a> -  to specify meta data about your web page<br>
+    <a href="#noscript">noscript</a> - to pull in different stylesheets in case the browser does not support 
+    JavaScript, or the user has disabled JavaScript on the browser. The script tag can appear 
+    in both the head and body tags. If used in the head tag, the noscript tag can only contain 
+    meta, style, and link elements.<br>
+    <a href="#script">script</a> - to either enter JavaScript code, or to pull in external JavaScript files 
+    (via the src attribute) that your web page will use.<br>
+    <a href="#style">style</a> - to specify CSS stylsheets for your web page<br>
+    <a href="#title">title</a> - to give your webpage a title<br>
+</p>
+<p>
+    To check that a webpage is using one of these elements, right click on the webpage and select 
+    View page source from the context menu that appears.
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="base">Base Element</h2>
+<p>
+
+</p>
+
+<h3>Examples that use the base element</h3>
+No examples provided yet.
+
+<h3>Webpages on the base element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base</a> 
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_base.asp">https://www.w3schools.com/tags/tag_base.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the base element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.purplemath.com/modules/polydefs.htm">https://www.purplemath.com/modules/polydefs.htm</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href=""></a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="link">Link Element</h2>
+<p>
+    The link element is used to create a link with an external resource. The href attribute 
+    is used to provide the URL of the external resource. The rel attribute is used to specify 
+    the type of relationship between the current webpage and the external resource. The 
+    type attribute specifies the media type of the linked external resource.
+</p>
+<p>
+    The common attributes of the link element are:
+</p>
+<ul>
+    <li>rel</li>
+    <li>type</li>
+    <li>href</li>
+    <li>as</li>
+    <li>sizes</li>
+</ul>
+
+<p>
+    A common use of the link tag is to import a stylesheet. This is done by 
+    setting rel="stylesheet", type="text/css", and setting href to the URL of 
+    the stylesheet. An example is shown below:<br>
+    &lt;link rel="stylesheet" type="text/css" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</p>
+<p>
+    Another common use of the link tag is to specify an icon that will be used to 
+    display on tab displaying the webpage. The icon is typically small (64px x 64px).
+    An example is shown below.<br>
+    &lt;link rel="icon" type="image/x-icon" href="/favicon.ico"&gt;
+</p>
+<p>
+    You can specify more than one icon, where each icon is a different size, by 
+    also specifying the sizes attribute. An example is shown below:<br>
+    &lt;link rel="icon" type="image/png" sizes="96x96" href="/themes/mit/assets/favicon/favicon-96x96.png"&gt;<br>
+    &lt;link rel="icon" type="image/png" sizes="16x16" href="/themes/mit/assets/favicon/favicon-16x16.png"&gt;
+</p>
+<p>
+    The image below shows some icons used by some webpages, as they are shown in the 
+    FireFox web browser:
+    <img src="../images/webpageIcons.png" />
+</p>
+
+<h3>Examples that use the link element</h3>
+No examples provided yet.
+
+<h3>Webpages on the link element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_link.asp">https://www.w3schools.com/tags/tag_link.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use link elements</h3>
+<p>
+    Most webpages use link elements, so there is no need to give specific examples here.
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="meta">Meta Element</h2>
+<p>
+    The meta tag is used to provide meta information about the web page.
+</p>
+<p>
+    The attributes of the meta element are:
+</p>
+<ul>
+    <li>charset</li>
+    <li>content</li>
+    <li>http-equiv</li>
+    <li>name</li>
+</ul>
+<p>
+    The name and content attributes are frequently used together. Furthermore, the 
+    http-equiv and content attributes are also frequently used together.
+</p>
+<p>
+    The meta tag can be used to tell anyone (or any program reading the webpage) 
+    what character set is being used to create the webpage. We do that with the 
+    charset attribute.<br>
+    &lt;meta charset="UTF-8"&gt;
+    Here we are indicating that the webpage is written using the Unicode 
+    character set. There are many other possiblities other than "UTF-8", see 
+    the list compiled by the Internet Assigned Numbers Authority (IANA)
+    <a target="_blank" href="http://www.iana.org/assignments/character-sets">here</a>.
+    Be aware that browsers do not support every possible character set.
+</p>
+<p>
+    The meta tag is frequently used to give a description of the webpage.
+    For this, one uses the name="description" attribute value, and sets the 
+    content attribute to a string which contains a description of the webpage. 
+    For example, one might use the following meta tag for a webpage about model trains:<br>
+    &lt;meta name="description" content="This webpage is all about model trains, how 
+    to build them, how to create landscapes for the model trains to drive through, 
+    how to paint them, and everything else concerning model trains."&gt;
+</p>
+<p>
+    The meta tag can also be used to provide keywords, to indicate to search 
+    engines what the webpage is about. For example, one might use a meta tag 
+    similar to the following to provide keywords about a webpage about various
+    kinds of sushi:<br>
+    &lt;meta name="keywords" content="raw fish, sushi, sashimi, uramakizushi, onigiri, makizushi"&gt;<br>
+    However, people in the past abused this and would use many irrelevant keywords. 
+    It is now believed that search engines don't use the meta keywords to rank 
+    webpages (at least Google doesn't, see <a target="_blank" 
+    href="https://webmasters.googleblog.com/2009/09/google-does-not-use-keywords-meta-tag.html">here</a>).
+</p>
+<p>
+    The meta tag can be used to provide the name of the person(s), program or company that 
+    created the webpage. Of course, you should have only one such meta tag in your webpage. 
+    Examples:<br>
+    &lt;meta name="author" content="Johnny B. Goode"&gt;
+    &lt;meta name="author" content="Leroy Brown, Jim Walker, Jim Croce"&gt;
+    &lt;meta name="author" content="FrontPage"&gt;
+    &lt;meta name="author" content="Acme Co."&gt;
+</p>
+<p>
+    The meta tag can also be used to redirect the user to another webpage after a 
+    designated number of seconds. For that, you use the http-equiv attribute and 
+    set the content to content="<em>n</em>; url=<em>urlToRedirectTo</em>", where n 
+    is a positive integer indicating how many seconds to wait before redirecting 
+    the user, and urlToDirectTo is the URL of the webpage the browser will redirect to.
+    An example is shown below:<br>
+    &lt;meta http-equiv="refresh" content="5; http://www.alibris.com"&gt;
+</p>
+
+<h3>Examples that use the meta element</h3>
+No examples provided yet.
+
+<h3>Webpages on the meta element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_meta.asp">https://www.w3schools.com/tags/tag_meta.asp</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://css-tricks.com/essential-meta-tags-social-media/">https://css-tricks.com/essential-meta-tags-social-media/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://opengraphprotocol.org/">https://opengraphprotocol.org/</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.sitepoint.com/meta-tags-html-basics-best-practices/">https://www.sitepoint.com/meta-tags-html-basics-best-practices/</a>
+    </li>
+</ul>
+
+<h3>Webpages that use meta elements</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://www.betterworldbooks.com/">https://www.betterworldbooks.com/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="noscript">Noscript Element</h2>
+<p>
+
+</p>
+
+<h3>Examples that use the noscript element</h3>
+No examples provided yet.
+
+<h3>Webpages on the noscript element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_noscript.asp">https://www.w3schools.com/tags/tag_noscript.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the noscript element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://bigfuture.collegeboard.org/explore-careers/careers">https://bigfuture.collegeboard.org/explore-careers/careers</a> 
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.marines.com/">https://www.marines.com/</a>
+    </li>
+</ul>
+
+<!-- ######################################################################################### -->
+<h2 id="script">Script Element</h2>
+<p>
+    The script element is used to write JavaScript within a webpage, or to pull in an 
+    external file that contains JavaScript. In the past, it was possible to also use 
+    VBScript in a webpage, but VBScript is no longer supported.
+</p>
+
+<h3>Examples that use the script element</h3>
+No examples provided yet.
+
+<h3>Webpages on the script element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_script.asp">https://www.w3schools.com/tags/tag_script.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the script element</h3>
+<p>
+    Most webpages use the script element, so there is no need to give specific examples here.
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="style">Style Element</h2>
+<p>
+    The style element is used to add "embedded" stylesheets to a webpage.
+</p>
+
+<h3>Examples that use the style element</h3>
+No examples provided yet.
+
+<h3>Webpages on the style element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_style.asp">https://www.w3schools.com/tags/tag_style.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use style elements</h3>
+<p>
+    Most webpages use style elements, so there is no need to give specific examples here.
+</p>
+
+<!-- ######################################################################################### -->
+<h2 id="title">Title Element</h2>
+<p>
+    The title element is used to give a webpage a title. The title typically appears on the 
+    tab containing the webpage. Some web browsers, like FireFox, will use the title as the
+    default name for a webpage that is book marked. The user is, however, allowed to change 
+    the book mark name. In the following image, you see how FireFox is using the title of 
+    Amazon's webpage as the default name for the bookmark:<br>
+    <img src="../images/AmazonTitle.png" />
+</p>
+<p>
+    There is not much you can do to give a title a "snazzy" look. About all you can do is 
+    add character entities to the title (like &amp;, &trade;, &dagger; etc.)
+</p>
+
+<h3>Examples that use the title element</h3>
+The use of the title element is considered to be quite simple that no examples are needed.
+
+<h3>Webpages on the title element</h3>
+<ul>
+    <li>
+        <a target="_blank" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title</a>
+    </li>
+    <li>
+        <a target="_blank" 
+        href="https://www.w3schools.com/tags/tag_title.asp">https://www.w3schools.com/tags/tag_title.asp</a>
+    </li>
+</ul>
+
+<h3>Webpages that use the title element</h3>
+<p>
+    Most webpages use the title element, so there is no need to give specific examples here.
+</p>
+</body>
+</html>

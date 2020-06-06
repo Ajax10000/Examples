@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The LocalStorage Object</title>
+    <link rel="stylesheet" href="../css/objectReference.css" >
+</head>
+
+<body>
+</body>
+<header>
+    <h1>The LocalStorage Object</h1>
+    <p>
+        The window.localStorage object has the ability to store large amounts of 
+        data on the user's computer for long term use. The amount of data it can store 
+        depends on the device; it varies from 2MB to more than 100MB. The data is 
+        stored in key/value pairs, where the key and value are both strings. Using 
+        JavaScript, you can read, write, and delete data from the localStorage object.
+    </p>
+    <p>
+        As mentioned above, localStorage can only store string values. However, it will automatically 
+        convert numbers into Strings for you. Also, you can store objects by first "stringifying" them
+        with JSON.stringify(), but later when you read it to get the original object you will have 
+        to use JSON.parse(). See <a target="_blank" 
+        href="https://www.youtube.com/watch?v=T9GWHFDcELQ">this YouTube video</a> for more information.
+    </p>
+
+    <h2>Webpages on the LocalStorage Object</h2>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/prop_win_localstorage.asp">https://www.w3schools.com/jsref/prop_win_localstorage.asp</a>
+        </li>
+    </ul>
+</header>
+
+<main>
+<!-- ######################################################################################### -->
+<section class="propertiesSecn">
+    <h2>Properties</h2>
+</section>
+
+<!-- ######################################################################################### -->
+<section class="methodsSecn">
+    <h2>Methods</h2>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="clearMethod">clear()</h3>
+    <p>
+        Arguments: 0
+    </p>
+    <p>
+        Call syntax:<br>
+        window.localStorage.clear();
+    </p>
+    <p>
+        The clear method removes all items in the local storage. To remove just one item from 
+        localStorage, use the removeItem() method.
+    </p>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="getItemMethod">getItem()</h3>
+    <p>
+        Arguments: 1, the key whose corresponding value you want returned
+    </p>
+    <p>
+        Call syntax:<br>
+        window.localStorge.getItem(<em>key</em>);
+    </p>
+    <p>
+        Given a key value, getItem() returns the corresponding value from the localStorage.
+    </p>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="keyMethod">key()</h3>
+    <p>
+        Arguments: 1, the index of the key whose corresponding value you want returned.
+    </p>
+    <p>
+
+    </p>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="removeItemMethod">removeItem()</h3>
+    <p>
+        Arguments: 1, the name of the key that you wish to remove
+    </p>
+    <p>
+        Call syntax:<br>
+        window.localStorage(<em>nameOfKey</em>);
+    </p>
+    <p>
+        Given the name of a key in the localStorage, removeItem() removes they key and 
+        corresponding value from the localStorage object. To remove all items in localStorage, use the 
+        clear() method.
+    </p>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="setItemMethod">setItem()</h3>
+    <p>
+        Arguments: 2, the key (as a String) and corresponding value (as a String) you want stored
+    </p>
+    <p>
+        Call syntax:<br>
+        window.localStorage.setItem(<em>key</em>, <em>value</em>);
+        localStorage.setItem(<em>key</em>, <em>value</em>);
+    </p>
+    <p>
+        Given a key and its correponding value, setItem() stores the key, value pair in 
+        the localStorage object.
+    </p>
+    </div>
+</section>
+</main>
+</html>

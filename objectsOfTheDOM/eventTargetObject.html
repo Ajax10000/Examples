@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>The EventTarget Object</title>
+    <link rel="stylesheet" href="../css/objectReference.css" >
+</head>
+
+<body>
+<header>
+    <h1>The EventTarget Object</h1>
+    <p>
+        The <a href="nodeObject.html">Node</a> object inherits from the EventTarget object.
+    </p>
+</header>
+
+<main>
+<!-- ######################################################################################### -->
+<section class="propertiesSecn">
+    <h2>Properties</h2>
+    <p>
+
+    </p>
+</section>
+
+<!-- ######################################################################################### -->
+<section class="methodsSecn">
+    <h2>Methods</h2>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="dispatchEventMethod">dispatchEvent()</h3>
+    <p>
+        Arguments: 1, the Event object that is to be dispatched
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>eventTarget</em>.dispatchEvent(<em>eventObjectToDispatch</em>)
+    </p>
+    <p>
+        The dispatchEvent method returns a boolean value. It returns false if, at any point 
+        in the propagation of the event, the Event.preventDefault method was called. Otherwise, 
+        it returns true.
+    </p>
+    <p>
+        Given an Event object (created with the Document.createEvent() method), the dispatchEvent 
+        method will generate the Event specified as the argument.
+    </p>
+
+    <h4>Webpages on the EventTarget.dispatchEvent() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.oreilly.com/library/view/javascript-the-definitive/0596000480/re468.html">https://www.oreilly.com/library/view/javascript-the-definitive/0596000480/re468.html</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="addEventListenerMethod">addEventListener()</h3>
+    <p>
+        Arguments: 3, the last one is optional<br>
+        The first argument is the name of the event we are adding a listener for.
+        The second argument is a function that will be called when the event occurs. 
+        This function is called the <em>event handler</em>.
+        The third argument is optional, and it is a boolean value. If true, the event 
+        is event handler is called in the <em>capturing phase</em>. If false, the event 
+        handler is called in the <em>bubbling phase</em>.
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>eventTarget</em>.addEventListener(<em>eventName</em>, <em>eventHandlerFunction</em> [, <em>booleanValue</em>]);
+    </p>
+
+    <h4>Webpages on the EventTarget.addEventListener() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href="https://www.w3schools.com/jsref/met_document_addeventlistener.asp">https://www.w3schools.com/jsref/met_document_addeventlistener.asp</a>
+        </li>
+    </ul>
+    </div>
+
+<!-- ========================================================================================= -->
+    <div class="method">
+    <h3 id="removeEventListenerMethod">removeEventListener()</h3>
+    <p>
+        Arguments: 3, the last one is optional<br>
+        The first argument is a string value that indicates what kind of event handler will be
+        removed; e.g., "click", "change", "keyup", "keydown", etc.
+        The second argument is the function that is called when the event occurs.
+        The third argument can be either a boolean variable or 
+    </p>
+    <p>
+        Call syntax:<br>
+        <em>eventTarget</em>.removeEventListener();
+    </p>
+    <p>
+        
+    </p>
+
+    <h4>Webpages on the EventTarget.removeEventListener() Method</h4>
+    <ul>
+        <li>
+            <a target="_blank" 
+            href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener</a>
+        </li>
+        <li>
+            <a target="_blank" 
+            href=""></a>
+        </li>
+    </ul>
+    </div>
+</section>
+</main>
+</body>
+</html>
